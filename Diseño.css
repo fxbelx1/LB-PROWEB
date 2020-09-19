@@ -1,0 +1,208 @@
+body{
+    background-image: url(Imagenes/687265.jpg); 
+}
+
+/*PRIMER DIV: PORTADA//////////////////////////////////////////////////////////////////*/
+#portada{
+    text-align: center;
+    margin: auto;
+    padding: 1.00em;
+    width: 890px;
+    height: 920px;
+    background-color: white;
+    color: black;
+    border-radius: 13px;
+}
+
+#j18{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+}
+
+#opens{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 80px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+#j28{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 28px;
+    letter-spacing: 5px;
+}
+
+#prac{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border: 2px solid;
+    border-color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    letter-spacing: 5px;
+    border-radius: 13px;
+    padding: 7px 50px;
+    transition: color 0.2s, background 0.2s;
+}
+
+#prac:hover{
+    color: black;
+    background-color: transparent;
+}
+
+#int{
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+    border: 2px solid;
+    border-color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    letter-spacing: 5px;
+    border-radius: 13px;
+    padding: 7px 30px;
+    transition: color 0.2s, background 0.2s;
+}
+
+#int:hover{
+    color: white;
+    background-color: black;
+}
+
+/*SEGUNDO DIV: PRACTICAS/////////////////////////////////////////////////////////////////*/
+#practicas{
+    margin: auto;
+    padding: 1.00em;
+    width: 890px;
+    height: 920px;
+    background-color: black;
+    color: white;
+    border-radius: 13px;
+    margin-top: 20px;
+}
+
+#titulo{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-bottom: 130px;
+}
+
+/*enlaces listos*/
+#enlacesl{
+    text-decoration: none;
+    color: white;  
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px; 
+    margin-left: 100px;
+    border: 1px solid;
+    border-color: black;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+/*efecto de enlaces listos*/
+#enlacesl:hover{
+    border-color: white;
+}
+
+/*enlaces no listos*/
+#enlacesnl{
+    text-decoration: none;
+    color: gray;  
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px; 
+    margin-left: 100px;
+    border: 1px solid;
+    border-color: black;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#bint{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border: 2px solid;
+    border-color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 7px 50px;
+    transition: color 0.2s, background 0.2s;
+    margin-left: 200px;
+}
+
+#bint:hover{
+    background-color: black;
+    color: white;
+}
+
+#bindex{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border: 2px solid;
+    border-color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 7px 50px;
+    transition: color 0.2s, background 0.2s;
+}
+
+#bindex:hover{
+    background-color: white;
+    color: black;
+}
+
+/*SEGUNDO DIV: INTEGRANTES/////////////////////////////////////////////////////////////////*/
+
+#integrantes{
+    margin: auto;
+    padding: 1.00em;
+    width: 890px;
+    height: 920px;
+    background-color: black;
+    color: white;
+    border-radius: 13px;
+    margin-top: 20px;
+}
+
+#tcont{
+    margin: auto;
+    background-color: black;
+    width: 450px;
+    height: 300px;
+    margin-bottom: 300px;
+}
+
+table{
+    width: 100%;
+    color: white;
+    border-collapse: collapse;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+}
+
+th, td{
+    padding: 10px;
+    
+}
+
+thead{
+    background-color: white;
+    color: black;
+}
+
+
