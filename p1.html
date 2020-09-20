@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Practica#1 </title>
+</head> 
+<body>
+    <h1 id="titulo"> PRACTICA #1: INTRODUCCION </h1>
+    <h2>Direccion IP</h2>
+    <h3>Las direcciones IP (IP es un acrónimo para Internet Protocol) son un número único e 
+        irrepetible con el cual se identifica una cmputadora conectada a una red que corre el 
+        protocolo IP. </br></br>
+        Una dirección IP (o simplemente IP como a veces se les refiere) es un conjunto de 
+        cuatro numeros del 0 al 255 separados por puntos. Por ejemplo, uservers.net tiene la 
+        dirección IP siguiente:</br></br>
+        200.36.127.40</br></br>
+        En realidad una dirección IP es una forma más sencilla de comprender números muy 
+        grandes, la dirección 200.36.127.40 es una forma más corta de escribir el numero 
+        3357835048. Esto se logra traduciendo el numero en cuatro tripletes.
+        </br></br>
+        </h3>
+
+    <h2>Tipos de Direcciones IP</h2>
+    <h3>Clase A: 10.0.0.0 a 10.255.255.255 (8 bits red, 24 bits hosts)</br></br>
+        Clase B: 172.16.0.0 a 172.31.255.255 (16 bits red, 16 bits hosts)</br></br>
+        Clase C: 192.168.0.0 a 192.168.255.255 (24 bits red, 8 bits hosts)</br></br>
+        Para comprender las clases de direcciones IP, necesitamos entender que cada dirección 
+        IP consiste en 4 octetos de 8 bits cada uno.</br></br>
+        Existen 5 tipos de clases de IP, más ciertas direcciones especiales: </br></br>
+        Red por defecto (default) - La dirección IP de 0.0.0.0 se utiliza para la red por 
+        defecto. </br></br>
+        Clase A - Esta clase es para las redes muy grandes, tales como las de una gran 
+        compañía internacional. Del IP con un primer octeto a partir de 0 al 127 son parte de 
+        esta clase. Los otros tres octetos son usados para identificar cada anfitrión. Esto 
+        significa que hay 126 redes de la clase A con 16,777,214 (2^24 -2) posibles 
+        anfitriones para un total de 2,147,483,648 (2^31) direcciones únicas del IP. Las 
+        redes de la clase A totalizan la mitad de las direcciones disponibles totales del IP.
+        </br></br> 
+        Clase B - La clase B se utiliza para las redes de tamaño mediano. Un buen ejemplo es 
+        un campus grande de la universidad. Las direcciones del IP con un primer octeto a 
+        partir del 128 al 191 son parte de esta clase. Las direcciones de la clase B también 
+        incluyen el segundo octeto como parte del identificador neto. Utilizan a los otros dos 
+        octetos para identificar cada anfitrión (host). Esto significa que hay 16,384 (2^14) 
+        redes de la clase B con 65,534 (2^16 -2) anfitriones posibles cada uno para un total de 
+        1,073,741,824 (2^30) direcciones únicas del IP. Las redes de la clase B totalizan un 
+        cuarto de las direcciones disponibles totales del IP y tienen un primer bit con valor 
+        de 1 y un segundo bit con valor de 0 en el primer octeto. </br></br>
+        Clase C - Las direcciones de la clase C se utilizan comúnmente para los negocios 
+        pequeños a medianos de tamaño. Las direcciones del IP con un primer octeto a partir 
+        del 192 al 223 son parte de esta clase. Las direcciones de la clase C también 
+        incluyen a segundos y terceros octetos como parte del identificador neto. Utilizan 
+        al último octeto para identificar cada anfitrión. Esto significa que hay 2,097,152 
+        (2^21) redes de la clase C con 256 (2^8 -2) anfitriones posibles cada uno para un 
+        total de 536,870,912 (2^29) direcciones únicas del IP. Las redes de la clase C 
+        totalizan un octavo de las direcciones disponibles totales del IP. Las redes de la 
+        clase C tienen un primer bit con valor de 1, segundo bit con valor de 1 y de un 
+        tercer bit con valor de 0 en el primer octeto.</br></br>
+        Clase D - Utilizado para los multicast, la clase D es levemente diferente de las 
+        primeras tres clases. Tiene un primer bit con valor de 1, segundo bit con valor de 
+        1, tercer bit con valor de 1 y cuarto bit con valor de 0. Los otros 28 bits se 
+        utilizan para identificar el grupo de computadoras al que el mensaje del multicast 
+        está dirigido. La clase D totaliza 1/16ava (268,435,456 o 2^28) de las direcciones 
+        disponibles del IP. </br></br>
+        Clase E - La clase E se utiliza para propósitos experimentales solamente. Como la 
+        clase D, es diferente de las primeras tres clases. Tiene un primer bit con valor de 
+        1, segundo bit con valor de 1, tercer bit con valor de 1 y cuarto bit con valor de 
+        1. Los otros 28 bits se utilizan para identificar el grupo de computadoras que el 
+        mensaje del multicast está dirigido. La clase E totaliza 1/16ava (268,435,456 o 2^28) 
+        de las direcciones disponibles del IP.</br></br>
+        Broadcast - los mensajes que se dirigen a todas las computadoras en una red se envían 
+        como broadcast. Estos mensajes utilizan siempre La dirección IP 255.255.255.255.
+        </br></br>
+    </h3>
+    
+    <h2>MAC Address</h2>
+    <h3>La dirección MAC o MAC Adresss (media access control address) de un dispositivo, 
+        es un identificador único que se les asigna a las interfaces de redes. Las tarjetas 
+        de red inalámbrica o las de red Ethernet, los routers, las impresoras, etc., todos 
+        tienen un identificador propio de 48 bits que no se repite en todo el mundo, es como 
+        su propia huella digital para poder comunicarse. En una red informática los equipos 
+        pueden identificarse a través de la dirección IP, pero también se pueden identificar 
+        por su MAC Address.</br></br>
+        Los fabricantes suelen añadir este identificador cuando se fabrican los dispositivos,
+        y usualmente se almacena en la memoria ROM (read only memory) del hardware, o en 
+        algún otro mecanismo del firmware. Por esta razón es imposible modificarla ya que 
+        está en un área de solo lectura que no puede ser alterada. Además también existe un 
+        ente regulador que se encarga de proveer las normas mediante las cuales de asignan 
+        las direcciones MAC, este es el Instituto de Ingeniería Eléctrica y Electrónica (IEEE).
+        </br></br>
+    </h3>
+    
+    <h2>ISP</h2>
+    <h3>El ISP (siglas en inglés de Internet Service Provider), en informática, es el 
+        Proveedor de Servicios de Internet, es decir, a la empresa que vende a los usuarios 
+        la conexión a Internet. </br></br>
+        Así, un mismo ISP brinda a su conjunto de clientes acceso a la Web a través de 
+        distintos medios o tecnologías (DSL o “banda ancha”, Dial-up, cablemódem, GSM, etc.), 
+        y en un mismo país o región pueden existir diversos ISP, que constituyen entre todos 
+        un mercado. </br></br>
+        En sus inicios, la Internet era una tecnología limitada a los ámbitos universitarios, 
+        gubernamentales y científicos, por lo que hacía falta una identificación y un acceso 
+        especializados para usarla. Pero esto limitaba sus dimensiones, y excluía al gran 
+        público, cada vez más interesado en las infinitas posibilidades de la Web, por lo 
+        que a principios de los años 90 un conjunto de empresas privadas decidieron ofrecer 
+        puntos de acceso a la red, convirtiéndose así en las primeras ISP comerciales.</br></br>
+        La competencia entre los ISP eventualmente condujo a un mercado de usuarios cada vez 
+        más amplio y a nuevas y más veloces tecnologías de conexión, que permitieron la gran 
+        explosión informativa del Internet, llevándolo a prácticamente todos lados: 
+        cyber-cafés y locutorios inicialmente, luego a los propios hogares de sus usuarios 
+        y finalmente, como podemos ver hoy, a los teléfonos celulares que estos poseen.</br></br>
+    </h3>
+    
+    <h2>Puertos bien conocidos</h2>
+    <h3>Este tipo de puertos se encuentran dentro de los puertos logicos y su rango comprende 
+        desde el 0 al 1023. Se encuentran "reservados" para programas y protocolos ya 
+        establecidos y universalmente conocidos como: FTP, HTTP, HTTPS, SSH, entre otros. 
+        Solamente un super usuario (root por ejemplo) tiene los privilegios necesarios para 
+        abrir éstos puertos.</br></br>
+        La razón de ser de los puertos bien-conocidos es permitir a los clientes encontrar a 
+        los servidores sin necesidad de información de configuración. </br></br>
+        Puertos mas importantes:</br>
+        • 1: TCP Servicio de multiplexado de puertos (TCPMUX)</br>
+        • 7: ECHO
+        • 20: FTP (“File Transfer Protocol”) Datos
+        • 21: FTP (“File Transfer Protocol”) Control
+        
+    </h3>
+    
+    <h2>Protocolo TCP/IP</h2>
+    <h3></h3>
+    
+    <h2>Redireccionanimiento de Puertos</h2>
+    <h3></h3>
+    
+    <h2>Servidor de Paginas WEB</h2>
+    <h3>Los servidores web (también conocidos como servidores HTTP) son un tipo de 
+        servidores utilizados para la distribución (entrega) de contenido web en redes 
+        internas o en Internet (“servidor” hace referencia al verbo “servir”). 
+        En general, la pregunta “qué es un servidor web” puede referirse a dos cosas: al 
+        software del servidor (es decir, al programa en sí) y al equipo en el que el 
+        software del servidor web se está ejecutando. Cuando se trata de este último, 
+        se habla del host. A continuación, nos referiremos explícitamente a alguno de estos 
+        significados, ya sea al software de servidor web/software servidor HTTP (o programa) 
+        o al host. </br></br>
+    </h3>
+    
+    <h2>Puerta de Enlace</h2>
+    <h3>La pasarela (en inglés gateway ) o puerta de enlace es el dispositivo que actúa de 
+        interfaz de conexión entre aparatos o dispositivos, y también posibilita compartir 
+        recursos entre dos o más ordenadores. Su propósito es traducir la información del 
+        protocolo utilizado en una red inicial, al protocolo usado en la red de destino.
+        </br></br>
+        La pasarela es normalmente un equipo informático configurado para dotar a las 
+        máquinas de una red de área local (Local Area Network, LAN) conectadas a él de un 
+        acceso hacia una red exterior, generalmente realizando para ello operaciones de 
+        traducción de direcciones de red (Network Address Translation, NAT). </br></br>
+        La dirección IP de una pasarela a menudo se parece a 192.168.1.1 o 192.168.0.1 y 
+        utiliza algunos rangos predefinidos, 127.x.x.x, 10.x.x.x, 172.x.x.x, 192.x.x.x.
+        Puedes averiguar la puerta de enlace de tu router ejecutando el comando ipconfig 
+        desde el cmd de Windows, o ejecutando la orden ip route desde la terminal macOS o 
+        GNU/Linux (ver más). </br></br>
+        La puerta de enlace predeterminada (default gateway) es la ruta predeterminada o 
+        ruta por defecto que se le asigna a un equipo y tiene como función enviar cualquier 
+        paquete del que no conozca por cuál interfaz enviarlo y no esté definido en las 
+        rutas del equipo, enviando el paquete por la ruta predeterminada.</br></br>
+    </h3>
+    
+    <h2>Direcciones IP Publicas y Privadas</h2>
+    <h3>La pública es el identificador de nuestra red desde el exterior, es decir, la de 
+        nuestro router de casa, que es el que es visible desde fuera, mientras que la 
+        privada es la que identifica a cada uno de los dispositivos conectados a nuestra 
+        red, por lo tanto, cada una de las direcciones IP que el router asigna a nuestro 
+        ordenador, móvil, tablet o cualquier otro dispositivo que se esté conectado a él.
+        Por lo tanto, todos los dispositivos conectados a un mismo router tienen distintas 
+        direcciones IP privadas, pero la misma IP pública, ya que es la del router, que 
+        actúa como puerta de enlace. </br></br>
+    </h3>
+    
+    <h2>DNS</h2>
+    <h3>DNS (Domain Name System) es un sistema de nombres de dominio que le permite a los 
+        humanos y a las computadoras comunicarse más fácilmente. Los humanos usan nombres, 
+        las computadoras usan números y el DNS es un intermediario que hace coincidir los 
+        nombres con los números dentro de una lista específica. Básicamente, DNS es un 
+        sistema de bases de datos distribuidas en la red con la función principal de 
+        traducir la solicitud de ciertos nombres de host a números de IP específicos que 
+        las computadoras entiendan. La información sobre nombres de host específicos que 
+        coinciden con números específicos se guarda en el directorio. El directorio se 
+        almacena en servidores de nombres de dominio.</br></br>
+    </h3>
+    
+    <h2>Firewall</h2>
+    <h3>Un firewall es un dispositivo de hardware o un software que nos permite gestionar 
+        y filtrar la totalidad de tráfico entrante y saliente que hay entre 2 redes u 
+        ordenadores de una misma red. Si el tráfico entrante o saliente cumple con una serie 
+        de Reglas que nosotros podemos especificar, entonces el tráfico podrá acceder o 
+        salir de nuestra red u ordenador sin restricción alguna. En caso de no cumplir las 
+        reglas el tráfico entrante o saliente será bloqueado.</br></br>
+        Básicamente la función de un firewall es proteger los equipos individuales, 
+        servidores o equipos conectados en red contra accesos no deseados de intrusos que 
+        nos pueden robar datos confidenciales, hacer perder información valiosa o incluso 
+        denegar servicios en nuestra red.</br></br>
+    </h3>
+    
+    <h2>WebHosting y Dominio</h2>
+    <h3>El hosting, que también es conocido como almacenamiento web, es el espacio físico 
+        que rentas en un servidor en el que puedes guardar toda la información de tu página 
+        web y que permite que tu sitio sea visible entre los usuarios de Internet. Los 
+        proveedores de hosting son los que te ofrecen el servicio de almacenamiento. El 
+        hosting funciona como una memoria USB. En ella simplemente guardas tus documentos y 
+        no sirve para nada más que para contener la información que deseas. Cuando quieres 
+        usar los archivos guardados en tu memoria simplemente la conectas a la computadora y 
+        abres la carpeta de tu interés. Al igual que las memorias USB, el trabajo del 
+        hosting es almacenar datos. </br></br>
+        El dominio es el nombre que asignas a tu página en internet para que los usuarios 
+        puedan encontrarte fácilmente y accedan a tu contenido. La función del dominio es 
+        dar una identidad.</br></br>
+    </h3>
+    
+    <h2>FTP</h2>
+    <h3>FTP es una sigla con varios usos. La más frecuente alude a la expresión inglesa 
+        File Transfer Protocol (en nuestro idioma, Protocolo de Transferencia de Archivos), 
+        que se emplea en el terreno de la informática. </br></br>
+        El FTP es un protocolo de red: un conjunto de reglas que establecen cómo deben 
+        comunicarse dos o más entidades para lograr la transmisión de información. En el 
+        caso específico del FTP, es un protocolo centrado en la transferencia de archivos a 
+        través de una red de tipo TCP/IP que se basa en la arquitectura cliente-servidor. 
+        El equipo cliente, en este marco, se conecta al servidor mediante el FTP con el 
+        objetivo de enviar o descargar archivos. Este protocolo busca maximizar la velocidad, 
+        sin apelar al cifrado para proteger la información. Por eso muchas veces se recurre 
+        a aplicaciones que posibilitan la transferencia del material pero con el tráfico 
+        cifrado. Lo que hacen las reglas del FTP es establecer los parámetros necesarios 
+        para lograr la conexión (indicando el modo de transferencia, los puertos, etc.) y 
+        especificar qué tipo de operación se llevará a cabo en el sistema de archivos 
+        (agregar, eliminar, copiar). Como la conexión es bidireccional, se pueden 
+        descargar y enviar archivos de manera simultánea. </br></br>
+    </h3>
+    
+    <h2>HTML</h2>
+    <h3>HTML es un lenguaje de marcado que se utiliza para el desarrollo de páginas de 
+        Internet. Se trata de la sigla que corresponde a HyperText Markup Language, es 
+        decir, Lenguaje de Marcas de Hipertexto, que podría ser traducido como Lenguaje de 
+        Formato de Documentos para Hipertexto.</br></br>
+        Se trata de un formato abierto que surgió a partir de las etiquetas SGML 
+        (Standard Generalized Markup Language). Concepto traducido generalmente como 
+        «Estándar de Lenguaje de Marcado Generalizado» y que se entiende como un sistema que 
+        permite ordenar y etiquetar diversos documentos dentro de una lista. Este lenguaje 
+        es el que se utiliza para especificar los nombres de las etiquetas que se utilizarán 
+        al ordenar, no existen reglas para dicha organización, por eso se dice que es un 
+        sistema de formato abierto. </br></br>
+        EL HTML se encarga de desarrollar una descripción sobre los contenidos que aparecen 
+        como textos y sobre su estructura, complementando dicho texto con diversos objetos 
+        (como fotografías, animaciones, etc).</br></br>
+        Es un lenguaje muy simple y general que sirve para definir otros lenguajes que 
+        tienen que ver con el formato de los documentos. </br></br>
+    </h3>
+    
+    <h2>CSS</h2>
+    <h3>CSS es un mecanismo complementario del lenguaje HTML que permite indicarle al 
+        navegador el estilo que debe darle a los distintos elementos al desplegar la 
+        información de un sitio web.</br></br>
+        Mientras que los comandos HTML le indican al navegador que ciertas partes del texto 
+        son títulos, subtítulos, enlaces o párrafos, CSS es lo que le dice, entre otras 
+        cosas, qué fuente, tamaño, color o alineación debe tener un elemento de la página.
+        </br></br>
+        ¿Qué significa CSS?</br> CSS significa Cascade Style Sheets, que se traduce al 
+        español como “Hojas de Estilo en Cascada”. Las hojas de estilo son un recurso que 
+        existe desde que se usaba el antecesor del HTML: el SGLM, un lenguaje para crear 
+        documentos electrónicos que nació a inicios de los 70´s. </br></br>
+        ¿Para qué sirven los estilos CSS?</br> Los estilos CSS son algo que puedes agregar 
+        de manera individual a cada elemento de tu plantilla HTML, pero esto resulta 
+        engorroso e impráctico. Cuando enlazas una página HTML a una hoja de estilos CSS, 
+        ésta tiene una serie de comandos que modifican a todos los elementos que concuerden 
+        con determinado criterio.
+    </h3>
+    
+
+</body>
+</html>
