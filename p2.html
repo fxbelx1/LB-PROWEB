@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> 
+    <title> PRACTICA #2 </title>
+
+    <!--//////////////// ESTILO //////////////-->
+    <style>
+        body{
+            background-color: #cceabb;
+        }
+
+        #principal{
+            text-align: center;
+            margin: auto;
+            padding: 1.00em;
+            width: 890px;
+            background-color: #3f3f44;
+            color: white;
+            border-radius: 13px;
+        }
+
+        h1{
+            font-family: 'Fredoka One', cursive;
+            letter-spacing: 5px;
+            color: #3f3f44;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        h2{
+            font-family: 'Fredoka One', cursive;
+            letter-spacing: 5px;
+            color: #f7f7f7;
+            font-size: 25px;
+            margin-bottom: 50px;
+        }
+
+        #aindice{
+            text-decoration: none;
+            color: white;
+            font-family: 'Questrial', sans-serif;
+            font-size: 16px;
+        }
+
+        #aindice:hover{
+            color: #fdcb9e;
+        }
+
+        h3{
+            text-align: left;
+            margin-left: 30px;
+        }
+
+        h4{
+            font-family: 'Fredoka One', cursive;
+            font-size: 25px;
+            letter-spacing: 5px;
+            text-align: left;
+            color: #cceabb;
+
+        }
+
+        h5{
+            font-family: 'Questrial', sans-serif;
+            color: #fdcb9e;
+            text-align: left;
+            font-size: 17px;
+            margin-bottom: 5px;
+        }
+
+        h6{
+            font-family: 'Questrial', sans-serif;
+            color: white;
+            text-align: left;
+            font-size: 15px;
+            margin-top: 5px;
+        }
+
+        #back{
+            text-decoration: none;
+            color: white;
+            font-family: 'Questrial', sans-serif;
+            font-size: 20px;
+        }
+
+        #back:hover{
+            color: #fdcb9e;
+        }
+
+
+
+    </style>
+</head> 
+<body>
+    <h1>DEFINICIÓN DE HTML5</h1>
+    <div id="principal">
+        <h2 id="indice">INDICE</h2>
+        <h3><a href="#1" id="aindice">Definición de HTML5</a></h3>
+        <h3><a href="#2" id="aindice">HMTL5 extiende la definición de lo que puede hacer una página web</a></h3>
+        <h3><a href="#3" id="aindice">El lenguaje HTML5</a></h3>
+        <h3><a href="#4" id="aindice">Breve recorrido por los principales elementos de HTML5</a></h3>
+        <h3><a href="#5" id="aindice">Los elementos "video", "audio" y "canvas"</a></h3>
+        <h3><a href="#6" id="aindice">Elementos "video" y "audio" para incorporar contenidos multimedia</a></h3>
+        <h3><a href="#7" id="aindice">Formularios web</a></h3>
+        <h3><a href="#8" id="aindice">Muchos elementos nuevos en HTML5</a></h3>
+        <h3><a href="#9" id="aindice">Web Workers</a></h3>
+        <h3><a href="#10" id="aindice">CSS3 no forma parte de HTML5, pero está íntimamente relacionado</a></h3>
+        <h3><a href="#11" id="aindice">Transformaciones CSS 2D y 3D</a></h3>
+        <h3><a href="#12" id="aindice">Fondos, bordes, colores RGBa, gradientes, sombras y esquinas redondeadas</a></h3>
+        <h3><a href="#13" id="aindice">Fuentes de letra Web @font-face</a></h3>
+        <h3><a href="#14" id="aindice">Media Queries de CSS</a></h3>
+        <h3><a href="#15" id="aindice">Animaciones con CSS</a></h3>
+        <h3><a href="#16" id="aindice">Transiciones de CSS</a></h3>
+        <h3><a href="#17" id="aindice">HTML5 está en un momento de transición</a></h3>
+        <h3><a href="#18" id="aindice">¿Quién utiliza HTML5 a día de hoy?</a></h3>
+        <h3><a href="#19" id="aindice">Funcionalidades y características futuras de HTML5</a></h3>
+        <h3 style="margin-bottom: 300px;"><a href="#20" id="aindice">Identificación de sitios web basados en HTML5</a></h3>
+
+        <!--///////////////// INFORMACION //////////////////-->
+        <h4 id="1">Definición de HTML5</h4>
+        <h6 style="text-align: center;"><a href="#indice" id="back">Indice</a></h6>
+
+
+        <h4 id="2">HMTL5 extiende la definición de lo que puede hacer una página web</h4>
+        <h6 style="text-align: center;"><a href="#indice" id="back">Indice</a></h6>
+
+
+        <h4 id="3">El lenguaje HTML5</h4>
+        <h6 style="text-align: center;"><a href="#indice" id="back">Indice</a></h6>
+
+
+        <h4 id="4">Breve recorrido por los principales elementos de HTML5</h4>
+        <h6 style="text-align: center;"><a href="#indice" id="back">Indice</a></h6>
+
+
+        <h4 id="5">Los elementos "video", "audio" y "canvas"</h4>
+        <h5>Insertar un audio</h5>
+        <h6>Para insertar un audio tenemos 2 formas: </br>
+            ivoox u otras webs de audios que permitan compartir vídeos en nuestra web. En 
+            ivoox  debemos abrir un audio, pinchamos sobre el botón más (añadir audio a) -> 
+            compartir. -> reproductor, y nos ofrecen varios formatos visuales. Seleccionamos 
+            uno, copiamos el código fuente en nuestro HTML y listo. Si el audio esta en 
+            nuestra propia web debemos usar la etiqueta audio de html5. </br></br>
+            &lt;audio controls&gt;</br>
+            &lt;source src="tiburon.mp3" type="audio/mp4"&gt;</br>
+            &lt;/audio&gt;</br></br>
+            Ten en cuenta que si el audio se reproduce desde nuestra web, eso implica que 
+            es nuestro servidor el que se encarga de su reproducción.
+        </h6>
+        <h5>Insertar un video</h5>
+        <h6>Para insertar un vídeo en nuestra web tenemos 2 formas:</br>
+            Para insertar un vídeo en nuestra web tenemos 2 formas:
+            Youtube u otras webs de vídeos (vimeo) que permitan compartir vídeos en nuestra web. Para ello podemos abrir cualquier vídeo -> compartir -> insertas y copiamos el código. Si pinchamos en mostrar más podemos configurar su funcionamiento como por ejemplo si queremos que al finalizar salgan otros vídeos de Youtube o no. Truco: Si queremos que el vídeo se inicie y/o finalice en un segundo concreto podemos añadir ?t=56 al final del SRC, siendo 56 el segundo del vídeo.</br></br>
+            (Ejemplo: https://www.youtube.com/embed/ux3STlov7Vw?start=20&end=50).</br></br>
+            Si el vídeo esta en nuestra propia web debemos usar la etiqueta video de html5.</br></br>
+            &lt;video controls width="320" height="200"&gt;
+            &lt;source src="mariposa.mp4" type="video/mp4"&gt;
+            &lt;/video&gt;</br></br>
+            Ten en cuenta que si el vídeo se reproduce desde nuestra web, eso implica que es nuestro servidor el que se encarga de su reproducción, los vídeos largos y de calidad consumen muchos recursos de servidor.
+        </h6>
+        <h5>Insertar diseños gráficos con CANVAS</h5>
+        <h6>El elemento canvas sirve para crear un entorno en el que crear dibujos pudiendo crear incluso efectos dinámicos. En si el elemento es muy simple solo es necesario darle unas dimensiones al lienzo:
+            &lt;canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;"&gt;&lt;/canvas&gt;</br></br>
+            El navegador que usas no soporta html5.</br></br>
+            &lt;/canvas&gt;</br></br>
+            En este caso le añadimos un borde, y un mensaje interno por si se abre la web con un navegador que no soporte HTML5.
+
+        </h6>
+        <h5>Insertando contenido multimedia</h5>
+        
+
+        <h6 style="text-align: center;"><a href="#indice" id="back">Indice</a></h6>
+        
+        
+        <h4 id="6">Elementos "video" y "audio" para incorporar contenidos multimedia</h4>
+        <h6 style="text-align: center;"><a href="#indice" id="back">Indice</a></h6>
+
+
+        <h4 id="7">Formularios web</h4>
+        <h6 style="text-align: center;"><a href="#indice" id="back">Indice</a></h6>
+
+
+        <h4 id="8">Muchos elementos nuevos en HTML5</h4>
+        <h6 style="text-align: center;"><a href="#indice" id="back">Indice</a></h6>
+
+
+        <h4 id="9">Web Workers</h4>
+        <h6>Web Workers es otra API que se suele considerar de la familia HTML5. Web Workers es un marco de programación que resuelve problemas de rendimiento de los navegadores. Al acceder a aplicaciones web avanzadas, como las de mapas o aquellas que generan gráficos o diagramas al entrar en la página web, se inician ciertas operaciones de computación que consumen una gran cantidad de recursos de procesador y que pueden reducir notablemente el rendimiento de la aplicación. Gran parte de la ralentización es debida a que se produce un conflicto a nivel de máquina entre las tareas interactivas de usuario (pulsación del ratón, arrastre, etc.) y la necesidad de la propia aplicación de acceder a recursos como datos, tarjeta gráfica u otros.</h6>
+        <h5>Almacenamiento Web</h5>
+        <h6>El Almacenamiento Web (Web Storage) es un ejemplo de uso de modelos preexistentes de tecnologías web bajo nuevas modalidades, más potentes. El Web Storage mejora el concepto de cookies del navegador. Las cookies son una tecnología bastante limitada y no resulta fácil su utilización por parte de los diseñadores web. Ahora, Web Storage actualiza este modelo para que las aplicaciones web puedan almacenar una cantidad de datos muy superior y que su acceso y utilización sea mucho más fácil y eficiente. </br></br>
+            HTML5 nos ofrece dos maneras de guardar datos: localStorage y sessionStorage. Los datos guardados con localStorage quedan a disposición del navegador en todo momento, aunque cerremos el programa o se reinicie el sistema. Los datos guardados bajo la modalidad  sessionStorage se pierden al cerrar el navegador.
+        </h6>
+        <h6 style="text-align: center;"><a href="#indice" id="back">Indice</a></h6>
+
+
+
+        <h4 id="10">CSS3 no forma parte de HTML5, pero está íntimamente relacionado</h4>
+        <h6> muchos de los aspectos novedosos designados bajo el nombre "HTML5" son en realidad una combinación de las tecnologías HTML5 descritas antes junto con JavaScript o CSS3. Algunos componentes de CSS3 suelen considerarse erróneamente como componentes de HTML5, como es el caso de las transiciones o la animación. A continuación describimos brevemente algunas de las características más relevantes de CSS3.</h6>
+        <h6 style="text-align: center;"><a href="#indice" id="back">Indice</a></h6>
+
+
+
+        <h4 id="11">Transformaciones CSS 2D y 3D</h4>
+        <h6>La propiedad transform de CSS nos permite rotar, cambiar la escala o sesgar un elemento de una página web. Un ejemplo puede ser el girar levemente una foto dentro de una página para conseguir un efecto estéticamente muy atractivo. También podemos  dar animación a las transformaciones: por ejemplo, mediante animación aplicada a la propiedad "scale" podemos conseguir un efecto de ampliación o reducción del tamaño de una imagen o de cualquier otro elemento. Podemos también añadir la propiedad "perspective" al efecto de transformación para simular la visión de un objeto en un espacio tridimensional, estático o en movimiento.</h6>
+        <h6 style="text-align: center;"><a href="#indice" id="back">Indice</a></h6>
+
+
+
+        <h4 id="12">Fondos, bordes, colores RGBa, gradientes, sombras y esquinas redondeadas</h4>
+        <h6>Ahora, con CSS3 es posible aplicar mejoras muy interesantes a la presencia visual de una página. Un ejemplo sencillo es la propiedad "border-radius", con la que podemos poner esquinas redondeadas a los objetos rectangulares, y también podemos crear muchos efectos nuevos, como gradientes de color o sombreados. podemos utilizar la propiedad border-image para utilizar imágenes como bordes de objetos, o añadir varias imágenes de fondo a un mismo contenedor, evitando así la limitación actual a una sola imagen que permite la propiedad background-image. La descripción del espacio de color RGBa es otra novedad de CSS3, ya que la "a" representa el grado de transparencia (o "alpha").</h6>
+        <h6 style="text-align: center;"><a href="#indice" id="back">Indice</a></h6>
+
+
+
+        <h4 id="13">Fuentes de letra Web @font-face</h4>
+        <h6 style="text-align: center;"><a href="#indice" id="back">Indice</a></h6>
+
+
+        <h4 id="14">Media Queries de CSS</h4>
+        <h6 style="text-align: center;"><a href="#indice" id="back">Indice</a></h6>
+
+
+        <h4 id="15">Animaciones con CSS</h4>
+        <h6 style="text-align: center;"><a href="#indice" id="back">Indice</a></h6>
+
+
+        <h4 id="16">Transiciones de CSS</h4>
+        <h6 style="text-align: center;"><a href="#indice" id="back">Indice</a></h6>
+
+
+        <h4 id="17">HTML5 está en un momento de transición</h4>
+        <h6 style="text-align: center;"><a href="#indice" id="back">Indice</a></h6>
+
+
+        <h4 id="18">¿Quién utiliza HTML5 a día de hoy?</h4>
+        <h6 style="text-align: center;"><a href="#indice" id="back">Indice</a></h6>
+
+
+        <h4 id="19">Funcionalidades y características futuras de HTML5</h4>
+        <h6 style="text-align: center;"><a href="#indice" id="back">Indice</a></h6>
+
+
+        <h4 id="20">Identificación de sitios web basados en HTML5</h4>
+        <h6 style="text-align: center;"><a href="#indice" id="back">Indice</a></h6>
+
+    </div>
+
+
+</body>
+</html>
