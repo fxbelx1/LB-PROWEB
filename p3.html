@@ -122,6 +122,123 @@
 
 
         <h1 id="5">La propiedad float CSS</h1>
+        <h4>La propiedad float de CSS es la que permite que los elementos floten sobre el lado que se indica, mientras que el resto de los elementos que no tienen la propiedad float definida se encuentran alrededor. </br></br>
+            De acuerdo a las normas de CSS2, los elementos flotantes pueden tener tres valores: left, right y none. El primero define que el elemento fluirá hacia la izquierda, el segundo a la derecha, mientras que el tercero quita la propiedad. </br></br>
+            Por defecto, los elementos cuya propiedad float no se encuentra definida, es none. </br></br>
+            Ejemplos de uso: </br>
+            La propiedad float posiciona una caja moviéndola todo lo posible a la izquierda o derecha de su posición original. Los tres valores de esta propiedad se interpretan de la siguiente manera: </br> </br>
+            • left, la caja se desplaza todo lo posible a la izquierda de la posición en la que se encontraba. El resto de elementos de la página se adaptan para mostrarse a su derecha (a menos que se indique lo contrario mediante la propiedad clear). </br>
+            • right, la caja se desplaza todo lo posible a la derecha de la posición en la que se encontraba. El resto de elementos de la página se adaptan para mostrarse a su izquierda (a menos que se indique lo contrario mediante la propiedad clear). </br>
+            • none, la caja no se desplaza respecto de su posición original. Además de ser el valor por defecto de esta propiedad, el valor none se puede utilizar para eliminar el float aplicado a un elemento mediante otros selectores. </br> </br>
+            La principal característica del posicionamiento float es que el resto de elementos de la página se adaptan para fluir alrededor de la caja flotante. </br> </br>
+        </h4>
+        <h3><a href="#0" id="aindice">Inicio</a></h3>
+
+
+        
+
+        <h1 id="6">Creación de columnas con la propiedad float</h1>
+        <h4>Uno de los usos más frecuentes para la propiedad float, es el diseño de páginas web a dos o más columnas. </br></br>
+            A continuación, veremos a grandes rasgos como se construye un diseño de este tipo. </br></br>
+        </h4>
+        <img src="Imagenes/p3.png">
+        <h3><a href="#0" id="aindice">Inicio</a></h3>
+
+
+
+        <h1 id="7">La propiedad clear</h1>
+        <h4>La propiedad CSS clear especifica si un elemento puede estar al lado de elementos flotantes que lo preceden o si debe ser movido (cleared) debajo de ellos. La propiedad clear aplica a ambos elementos flotantes y no flotantes. </br></br>
+            Cuando es aplicado a bloques no flotantes, mueve el border edge del elemento hacia abajo hasta que este debajo del margin edge de todos los floats relevantes. </br></br>
+            Este movimiento (cuando acontece) causa que margin collapsing no ocurra. Cuando se aplica a elementos flotantes, mueve el margin edge del elemento debajo del margin edge de todos los floats relevantes. Esto afecta la posición de floats posteriores, ya que estos no pueden ser posicionados más arriba que los primeros. </br></br>
+            Los floats que son relevantes para ser limpiados (cleared) son los primeros floats dentro del mismo contexto de formato de bloque. </br></br>
+            Valores</br></br>
+            • none: Es un keyword que indica que el elemento no es movido hacia abajo para limpiar elementos flotantes anteriores. </br></br>
+            • left: Es un keyword que indica que el elemento es movido hacia abajo para limpiar elementos flotantes a la izquierda. </br></br>
+            • right: Es un keyword que indica que el elemento es movido hacia abajo para limpiar elementos flotantes a la derecha. </br></br>
+            • both: Es un keyword que indica que el elemento es movido hacia abajo para limpiar tanto elementos flotantes de la izquierda como de la derecha. </br></br>
+            • inline-start: Es un keyword que indica que el elemento es movido hacia abajo para limpiar elementos flotantes al inicio del bloque contenedor, estos son los elementos con valor float left en scripts ltr (left to right) y elementos con valor float right en scripts rtl (right to left). </br></br>
+            • inline-end:  Es un keyword que indica que el elemento es movido hacia abajo para limpiar floats al final del bloque contenedor, estos son los elementos con valor float right en scripts ltr (left to right) y elementos con valor float left  en scripts rtl (right to left). </br></br>
+        </h4>
+        <h3><a href="#0" id="aindice">Inicio</a></h3>
+
+
+
+        <h1 id="8">Creación de un menú de navegación basado en listas con “float”</h1>
+        <h4>
+
+        </h4>
+        <h3><a href="#0" id="aindice">Inicio</a></h3>
+
+
+
+
+        <h1 id="9">Añadir estilos para el texto</h1>
+        <h4>
+
+        </h4>
+        <h3><a href="#0" id="aindice">Inicio</a></h3>
+
+
+
+
+        <h1 id="10">Efecto de los márgenes internos y externos en una estructura de anchura fija</h1>
+        <h4>
+
+        </h4>
+        <h3><a href="#0" id="aindice">Inicio</a></h3>
+
+
+
+
+        <h1 id="11">Repaso al uso de márgenes internos y externos</h1>
+        <h4>Hemos visto dos métodos para separar los elementos dentro de una página. El primero consiste en añadir margen interno (padding) al elemento div contenedor. En este caso la ventaja es que todos los elementos dentro de este div se ven afectados al mismo tiempo, es una solución rápida y eficiente. Su desventaja es que aumenta la anchura total del propio contenedor. Para compensar esta expansión, tenemos que dejar algo de espacio adicional a los lados. </br></br>
+            El segundo método consiste en añadir márgenes externos a los elementos que están dentro del propio div. Su desventaja es que necesitamos más código y hay que prestar atención a los detalles, tenemos que ir viendo cómo se posicionan los elementos individualmente. Su ventaja es que el posicionamiento de la columna es más predecible, puesto que solo tenemos que tener en cuenta una anchura total. </br></br>
+        </h4>
+        <h3><a href="#0" id="aindice">Inicio</a></h3>
+
+
+
+        <h1 id="12">Aplicar una imagen de fondo al pie de página</h1>
+        <h4>1. Localiza el div #footer y sustituye todo el contenido de texto que hay dentro por este que aparece aquí: </br></br>
+            &lt;div id="footer"&gt; </br></br>
+              &lt;p&gt;Copyright Worldwide Apparel 2011 &lt;/p&gt; </br></br>
+             &lt;p&gt;All content on this site is confidential and should not be shared with anyone outside of Worldwide Apparel.&lt;p&gt; </br></br>
+            &lt;/div&gt;</br></br></br>
+            2. Guarda la página y ábrela en el navegador. A cada uno de los párrafos se le aplican las reglas de párrafo descritas en la hoja de estilos. Ahora vamos a añadirle una imagen de fondo a todo el contenedor div. </br></br></br>
+            3. En la hoja de estilos interna, encuentra la regla para el pie de página (“#footer”). Añade una nueva regla para aplicar una imagen de fondo indicando un archivo de la carpeta de imágenes de tu equipo: </br></br></br>
+            #footer {</br></br>
+            clear:both; </br></br>
+            background-color:#BA2B22; </br></br>
+            background-image:url(images/footer_background.jpg); </br></br>
+            background-repeat:no-repeat; </br></br>
+            }</br></br>
+            El pie de página tiene ahora una imagen de fondo por aplicación de una nueva regla CSS. </br></br></br>
+            4. Modifica la regla para el pie de página añadiendo las líneas en rojo: </br></br>
+            #footer {</br></br>
+            clear:both; </br></br>
+            background-color:#BA2B22; </br></br>
+            background-image:url(images/footer_background.jpg); </br></br>
+            background-repeat:no-repeat; </br></br>
+            width:960px; </br></br>
+            height:128px; </br></br>
+           }</br></br>
+           Guarda el archivo y vuelve a mostrar la página en el navegador. Ahora el tamaño de la zona de pie de página coincide con el tamaño de la foto. El paso siguiente consiste en ajustar los estilos del texto que va dentro, separándolos. </br></br></br>
+           5. En el editor de texto, encuentra la regla #footer y justo debajo añade esta otra regla para párrafos, que se aplicará únicamente a los párrafos del footer: </br></br>
+           #footer p {</br></br>
+            margin:10px 0px 0px 20px; </br></br>
+            width:280px; </br></br>
+            font-family:Verdana, Geneva, sans-serif; </br></br>
+            font-size:0.689em; </br></br>
+          }</br></br>
+          Esta regla añade un margen superior de 10 pixels y margen izquierdo de 20 pixels a ambos párrafos del pie. </br></br>
+            6. Guarda la página y visualízala en el navegador. </br></br>   
+        </h4>
+        <h3><a href="#0" id="aindice">Inicio</a></h3>
+
+
+
+
+        <h1 id="13">Ajuste fino de la estructura visual de la página</h1>
 
 
     </div>
