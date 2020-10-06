@@ -164,8 +164,46 @@
 
 
         <h1 id="8">Creación de un menú de navegación basado en listas con “float”</h1>
-        <h4>
+        <h4>Ahora que has aprendido los conceptos básicos de “float” y “clear”, volvamos a la sección de la barra de navegación y vamos a añadir un menú sencillo basado en una lista no ordenada (es decir, que sus líneas no llevan numeración, sino viñetas o signos). Los elementos de la lista dentro de este menú tendrán que ser flotantes para modificar la presentación vertical por defecto de las listas. </br></br>
 
+            1. Desde el editor de textos, busca el div mainnav y añádele la siguiente lista no ordenada y estas líneas:</br>
+            &lt;ul&gt;</br>
+                 &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;</br>
+                 &lt;li&gt;&lt;a href="ourcompany.html"&gt;Our Company&lt;/a&gt;&lt;/li&gt;</br>
+                 &lt;li&gt;&lt;a href="policies.html"&gt;Policies and Procedures&lt;/a&gt;&lt;/li&gt;</br>
+                 &lt;li&gt;&lt;a href="doc_repository.html"&gt;Document Repository&lt;/a&gt;&lt;/li&gt;</br>
+                 &lt;li&gt;&lt;a href="news.html"&gt;News & Events&lt;/a&gt;&lt;/li&gt;</br>
+            &lt;/ul&gt;</br>
+            
+            Los elementos de la lista son enlaces a páginas que todavía no existen.</br></br></br>
+            
+            2. Guarda el archivo y visualízalo en el navegador.</br>
+            La lista aparece en la posición vertical por defecto. </br></br></br>
+            
+            3. Vuelve al editor y localiza la regla #mainnav. Añade una nueva regla entre ésta y la regla de la barra lateral pulsando Intro unas cuantas veces e insertando el código siguiente:</br></br>
+            
+            #mainnav li {</br>
+               float:left;</br>
+             }</br></br></br>
+            
+            4. Guarda la página y visualízala en el navegador. Todos los elementos aparecen ahora colocados en horizontal.</br></br></br>
+            
+            5. Vuelve al editor y añade este código a la regla #mainnav li:</br></br>
+            
+            #mainnav li {</br>
+               float:left;</br>
+              width:170px;</br>
+               height:40px;   background-color:#CCC;</br>
+                   text-align:center;</br>
+               border-left:1px black solid;</br>
+               border-right:1px black solid;</br>
+            }</br></br>
+
+            6. Debajo de la declaración de border-right, añade esta línea de código:</br></br>
+
+            line-height:40px;</br></br>
+
+            7. Guarda el archivo y muéstralo en el navegador, El texto aparece ahora centrado dentro del recuadro. </br></br>
         </h4>
         <h3><a href="#0" id="aindice">Inicio</a></h3>
 
@@ -173,7 +211,16 @@
 
 
         <h1 id="9">Añadir estilos para el texto</h1>
-        <h4>
+        <h4>1. En la parte inicial del archivo HTML busca la etiqueta <link> de la hoja de estilos reset.css. Para añadir otra hoja de estilos externa, selecciona esta línea y pulsa Ctrl + C para copiarla. En la línea siguiente pulsa Ctrl + V para pegarla. Ahora cambia el nombre de archivo “reset.css” por el siguiente “base.css”: </br></br>
+
+            &lt;link href="reset.css" rel="stylesheet" type="text/css" /&gt;</br>
+            &lt;link href="base.css" rel="stylesheet" type="text/css" /&gt;</br></br></br>
+            
+            2. Guarda el archivo y visualízalo en el navegador para ver cómo afectan estos nuevos valores a nuestra página.</br></br>
+            La página utiliza ahora una hoja de estilos externa para los elementos de texto.</br></br></br>
+            
+            3. Regresa al editor y selecciona el menú Archivo – Abrir. En la ventana que aparece, ve a la carpeta  HTML5_03lessons, selecciona el archivo base.css y pulsa Abrir. Revisa los estilos que incluye este archivo CSS.</br></br>
+            Existen algunas propiedades CSS adicionales aplicables a las fuentes, como “font-weight”, “text-transform” o “letter-spacing”.</br></br>
 
         </h4>
         <h3><a href="#0" id="aindice">Inicio</a></h3>
@@ -182,7 +229,69 @@
 
 
         <h1 id="10">Efecto de los márgenes internos y externos en una estructura de anchura fija</h1>
-        <h4>
+        <h4>Vamos a ver ahora algunas estrategias para controlar la estructura visual de la página.En este primer ejercicio vamos a añadir un margen interior (“padding”) al elemento sidebar. </br></br>
+
+            1. En el editor de texto, abre el archivo 03_layoutwork.html y visualiza la pantalla en el navegador. Verás que el texto de la barra lateral está pegado al borde, quedaría mejor si estuviera un poco separado.</br></br></br>
+            
+            2. Vuelve al editor, localiza la regla para el “sidebar” en el código CSS y añade esta línea:</br></br>
+            
+            #sidebar {</br>
+              float:right;</br>
+              width:300px;</br>
+              background-color:#CCC;</br>
+            padding:0px 20px 0px 20px;</br>
+            }</br></br>
+            
+            El primer valor (0px) es la separación o margen interior con respecto al borde superior. El segundo valor (20px) corresponde a la separación con respecto al margen derecho. El tercero (0px) es la separación con respecto al borde inferior y el ultimo (20px) es el margen interior de separación aplicable al borde izquierdo. </br></br></br>
+            
+            3. Vuelve al editor. Añade una cantidad de margen interno al div main.</br></br>
+            
+            #main {</br>
+              width:600px;</br>
+              float:left;</br>
+              background-color:#ADA446;</br>
+            padding:0px 20px 0px 20px;</br>
+            }</br></br></br>
+            
+            4. Vuelve al editor y localiza las reglas de margen interno que has añadido en los pasos 2 y 3. Selecciónalas y elimínalas. </br></br></br>
+            
+            5. Debajo de la regla #footer del código CSS, añade esta regla nueva:</br></br>
+            
+            p, h1, h2, h3 {</br>
+              margin-left:20px;</br>
+              margin-right:20px;</br>
+            }</br></br></br>
+            
+            6   Vuelve al editor y borra las reglas para margin-left y margin-right que has añadido en el paso 5 (pero deja la regla tal cual). Añade ahora este grupo de reglas:</br></br>
+            
+            p, h1, h2, h3 {</br>
+            }</br>
+            #sidebar p, #sidebar h2, #sidebar h3, #main p, #main h1, #main h2, #main h3 {</br>
+              margin-left:20px;</br>
+              margin-right:20px;</br>
+            }</br></br></br>
+            
+            7. Guarda el archivo y ábrelo con el navegador. Prácticamente no veremos cambios excepto en el pie de página, que queda de nuevo totalmente pegado al lado izquierdo.</br></br></br>
+            
+            8. Añade una nueva regla justo debajo de la regla anterior, donde aparecían todos los elementos:</br></br>
+            
+            #sidebar p, #sidebar h2, #sidebar h3, #main p, #main h1, #main h2, #main h3{</br>
+              margin-left:20px;</br>
+              margin-right:20px;</br>
+            }</br>
+            #main p {</br>
+              margin-left:30px;</br>
+            }</br></br></br>
+            
+            9. Los párrafos dentro de la columna “main” ahora tienen un margen a la izquierda de 30 pixels, y en contraste con el resto de los elementos, aparecen indentados.</br></br></br>
+            
+            10. Encuentra la regla vacía para los elementos  p, h1, h2 y h3 en tu hoja de estilos. Modifica la regla así:</br></br>
+            
+            p, h1, h2, h3 {</br>
+             margin-bottom:20px;</br>
+            }</br></br>
+            
+            Guarda la página y ábrela con el navegador. Ahora, casi todos los elementos se separan un poco más unos de otros, al añadirse espacio a sus bordes inferiores.</br></br>
 
         </h4>
         <h3><a href="#0" id="aindice">Inicio</a></h3>
@@ -239,7 +348,79 @@
 
 
         <h1 id="13">Ajuste fino de la estructura visual de la página</h1>
+        <h4>Podemos aplicar colores de fondo y/o bordes a los elementos principales de nuestra estructura en las primeras fases del diseño, lo que nos ayudará a ver mejor sus límites. </br></br>
+            Ahora vamos a eliminar los colores de fondo de los divs del centro de la página, añadiremos algunas imágenes de fondo y mejoraremos algo el estilo de nuestra barra de navegación. </br></br></br>
+            1. Elimina toda la propiedad background-color en las siguientes 4 reglas de estilo:  #wrap, #sidebar, #main y #footer. Guarda el archivo y visualízalo en el navegador. </br></br></br>
+            2. Aunque nos vamos aproximando a un diseño de página unificado, aún tenemos que hacer unas cuantas cosas más</br></br>
+            Vuelve al editor y añade estas declaraciones a la regla #sidebar: </br></br>
+            #sidebar {</br></br>
+            float:right; </br></br>
+            width:300px; </br></br>
+            background-image:url(images/sidebar_bg.png); </br></br>
+            background-repeat:repeat-x; </br></br>
+            }</br></br>
+            Como hicimos en la práctica anterior con el pie de página, ahora estamos añadiendo una imagen de fondo desde CSS a este elemento div. pero en este caso el valor de background-repeat ahora es “repeat-x”. Esto provoca que la imagen se repita en sentido horizontal</br></br></br>
+            3. Añade también esta otra declaración para aplicarla al borde Izquierdo de la barra. Nos va a ayudar a delimitar mejor la separación con respecto al contenido del área principal (“main”). </br></br>
+             #sidebar {</br></br>
+             float:right; </br></br>
+            width:300px; </br></br>
+            background-image:url(images/sidebar_bg.png); </br></br>
+             background-repeat:repeat-x; </br></br>
+             border-left: thin solid gray; </br></br>
+            }</br></br></br>
+            4. Otro problema de nuestra estructura es el logo dentro de la cabecera. En este momento está anidado y se presenta en pantalla pegado al borde del contenedor. Podemos separarlo un poco creando una regla específica para imágenes dentro del div “masthead”. Encuentra la regla #masthead y añádele esta línea justo debajo. </br></br>
+              #masthead img {</br>
+              margin-left: 20px; </br>
+            }</br>
+            Se trata de un selector contextual igual que otros que hemos ido añadiendo a los títulos y párrafos dentro de las columnas “main” y “sidebar”. </br></br>
+            5. Para mejorar la presencia visual de los enlaces dentro de la sección “mainnav” vamos a añadir una regla explícita para los enlaces. Encuentra la regla #mainnav li y añade la siguiente regla justo debajo de ella: </br></br>
+            #mainnav ul li a {   </br>
+                color:#ffffff;  </br>
+                text-decoration: none; </br>
+                display:block; </br>
+                }</br></br>
+                La declaración text-decoration elimina el subrayado del vínculo y le cambia el color a blanco. La declaración display:block hace que estos elementos de navegación llenen por complete todo el espacio de la barra de navegación. </br></br>
+            6. Cuando el usuario pasa el cursor por encima de los enlaces, sería interesante que cambiasen su apariencia, así sabe que se trata de vínculos y no de texto normal. Para ello podemos aprovechar una particularidad de los estilos que solo tienen los vínculos. Justo debajo de la regla #mainnav ul li a , añade esta otra: </br></br>
+                #mainnav ul li a:hover { </br> 
+              background-color:#666666;</br>
+              color:#D2CD2F; </br>
+              }</br></br>
+              7. Guarda el archivo y muéstralo en el navegador. Pasa el cursor por encima de los enlaces para ver los cambios. Es el resultado del estilo a: hover. </br></br>                                  
+        </h4>
+        <h3><a href="#0" id="aindice">Inicio</a></h3>
 
+
+
+
+        <h1 id="14">Preguntas</h1>
+        <h4>• ¿Qué es un CSS?:</br> </br> 
+            CSS (en inglés Cascading Style Sheets) es lo que se denomina lenguaje de hojas de estilo en cascada. CSS permite estilizar todo en un archivo diferente, creando el estilo allí y después integrando el archivo CSS sobre el marcado HTML. Esto hace que el marcado HTML sea mucho más limpio y fácil de mantener. </br></br></br>
+            • ¿Para qué sirve un CSS?</br></br>
+            Se utiliza para estilizar elementos escritos en un lenguaje de marcado como HTML. </br>  </br></br>  
+            • ¿Cuál es la diferencia que sería más difícil de realizar en un sitio web si se optara por no usar un CSS?</br></br>
+            Con CSS no tienes que describir repetidamente cómo se ven los elementos individuales. Esto ahorra tiempo, hace el código más corto y menos propenso a errores. </br></br></br>
+        </h4>
+        <h3><a href="#0" id="aindice">Inicio</a></h3>
+
+
+
+        <h1 id="15">Conclusiones</h1>
+        <h4>• Elda Priscila Fabela Paez: </br>
+            La tecnología CSS está diseñada para marcar la separación del contenido de las páginas web y la forma de presentación de estas. Lo que genera múltiples beneficios, como tener un sitio web responsivo; evitar hacer archivos demasiado pesados; definir el estilo visual de todo un sitio web. Así, si cambiamos una página, cambiarán todas automáticamente; trabajar con estándares y separar (hasta cierto punto) la estructura de la presentación logrando un trabajo más definido; provee más flexibilidad y control en las especificaciones del sitio web; simplifica la creación de la página.</br></br></br>
+        </h4>
+        <h4>• Diego Javier Saucedo Jiménez: </br>
+            En esta práctica nos pudimos dar cuenta que el CSS es algo fundamental para elaborar los archivos HTML. Una página web forzosamente debería llevar CSS para darle un buen estilo y así mejorar la calidad del sitio. Generalmente las páginas HTML sin CSS visualmente lucen muy feas y carecen de estilo propio.</br></br></br>
+        </h4>
+        <h4>• Estefani Denisse Gallegos: </br>
+            propiedad float es la que permite los elementos floten sobre el lado que se les indica, la propiedad clear se especifica cuando un elemento puede estar al lado de elementos flotantes. El uso de la propiedad float se usa para crear columnas.</br></br></br>
+        </h4>
+        <h4>• Carlos Rafael Garcia Hernández: </br>
+            CSS es una herramienta que nos permite hacer modificaciones visuales que pueden darle un gran estilo a cualquier sitio web, considero que actualmente es muy importante para la creación de páginas web ya que puede. hacer que las páginas web sean más responsivas, está muy bien optimizado por lo tanto no utiliza tanto ancho de banda y nos permite configurar la página para distintos dispositivos.</br></br></br>
+        </h4>
+        <h4>• Paulina Leon Zabalgoitia: </br>
+            En esta practica logramos profundizar mas acerca del tema html, como es que este puede ser usado para crear diseños tanto web como móviles y también como es que dentro de un archivo html puedes lograr agrupar ciertos términos, y estos a la vez agruparlos en otros, es decir anidarlos. Esto puede servir para hacer la modificación, o los estilos mucho mas fáciles, eficientes y útiles.</br></br></br>
+        </h4>
+        <h3><a href="#0" id="aindice">Inicio</a></h3>
 
     </div>
 
