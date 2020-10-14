@@ -8,17 +8,17 @@
 
     <style>
         body{
-            background-color: #4c4c4c;
+            background-color: #000000;
         }
 
         div.title{
             margin: auto;
-            width: 940px;
+            width: 800px;
             height: 100px;
             background-color:transparent;
             border-radius: 10px;
             font-family: 'Lilita One', cursive;
-            color: #e5df88;
+            color: #12e6c8;
             text-align: center;
             font-size: 30px;
             letter-spacing: 4px;
@@ -26,39 +26,38 @@
 
         p.title{
             font-family: 'Itim', cursive;
-            color: #e8e8e8;
+            color: white;
             font-size: 20px;
         }
 
         div.noc{
             margin: auto;
-            width: 750px;
-            background-color: transparent;
+            width: 800px;
+            background-color: white;
             font-family: 'Itim', cursive;
             font-size: 20px;
-            color: #e8e8e8;
+            color: black;
             text-align: center;
             letter-spacing: 3px;
+            border-radius: 3px;
         }
 
         div.index{
             margin: auto;
-            width: 700px;
+            width: 800px;
             height: 850px;
             background-color: transparent;
             margin-top: 30px;
-            border-radius: 15px;
-            text-align: justify;
+            text-align: center;
         }
 
         a.index{
-            color: #e8e8e8;
+            color: white;
             text-decoration: none;
-            margin-left: 5px;
         }
 
         a.index:hover{
-            color: #a37eba;
+            color: #a287f4;
         }
 
         p.index{
@@ -68,7 +67,16 @@
 
         p.cont{
             font-family: 'Lilita One', cursive;
-            color: #e5df88;
+            color: #12e6c8;
+            text-align: center;
+            font-size: 30px;
+            letter-spacing: 4px;
+            margin-top: 100px;
+            margin-bottom: 5px;
+        }
+
+        h1.cont{
+            font-family: 'Lilita One', cursive;
             text-align: center;
             font-size: 30px;
             letter-spacing: 4px;
@@ -77,20 +85,38 @@
         div.cont{
             margin: auto;
             width: 870px;
-            height: 1000px;
-            background-color: #e5df88;
+            
+            background-color: black;
+            border-radius: 3px;
+            border: 2px solid;
+            border-color: white;
         }
 
         a.cont{
             text-decoration: none;
-            color: white;
+            color: black;
             font-family: 'Itim', cursive;
             font-size: 15px;
-            border-color: black;
             border: 2px solid;
-            border-radius: 10px;
-            padding: 7px 10px;
-            background-color: #a37eba;
+            border-color: black;
+            border-radius: 3px;
+            padding: 7px 408px;
+            background-color: #a287f4;
+        }
+
+        a.cont:hover{
+            background-color: transparent;
+            border-color: #a287f4;
+            color: #a287f4;
+        }
+
+        p.summary{
+            color: white;
+            font-family: 'Itim', cursive;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top: 10px;
+            text-align: justify;
         }
 
     </style>
@@ -102,35 +128,236 @@
         CONCEPTOS BÁSICOS DE HTML, XHTML y CSS
     </div>
 
-    <div class="noc">Indice</div>
+    <div class="noc" id="0">Indice</div>
 
     <div class="index">
-        <p class="index"><a href="#" class="index">Lenguajes Web</a></p>
-        <p class="index"><a href="#" class="index">La estructura de la página web se basa en HTML</a></p>
-        <p class="index"><a href="#" class="index">Detalles de la sintaxis de XHTML</a></p>
-        <p class="index"><a href="#" class="index">Doctype indica al navegador qué debe esperar</a></p>
-        <p class="index"><a href="#" class="index">El W3C y la validación de la página</a></p>
-        <p class="index"><a href="#" class="index">Estructura HTML</a></p>
-        <p class="index"><a href="#" class="index">Insertar imágenes en HTML</a></p>
-        <p class="index"><a href="#" class="index">El papel de CSS</a></p>
-        <p class="index"><a href="#" class="index">Definir un estilo para los títulos</a></p>
-        <p class="index"><a href="#" class="index">Los estilos de clase y el elemento &lt;span&gt;</a></p>
-        <p class="index"><a href="#" class="index">Tres maneras de utilizar estilos</a></p>
-        <p class="index"><a href="#" class="index">Cuándo utilizar hojas de estilo internas y externas</a></p>
-        <p class="index"><a href="#" class="index">Creación de una hoja de estilos externa</a></p>
-        <p class="index"><a href="#" class="index">En qué consisten los estilos en cascada</a></p>
-        <p class="index"><a href="#" class="index">Uso de textos y tipos de letra en la web</a></p>
-        <p class="index"><a href="#" class="index">Elección de font-family</a></p>
-        <p class="index"><a href="#" class="index">Cambiar el tamaño del texto con CSS</a></p>
-        <p class="index"><a href="#" class="index">Las medidas en pixels y puntos no son la mejor opción para el tamaño</a></p>
-        <p class="index"><a href="#" class="index">Uso de una combinación de porcentaje y medida "em"</a></p>
+        <p class="index"><a href="#1" class="index">Lenguajes Web</a></p>
+        <p class="index"><a href="#2" class="index">La estructura de la página web se basa en HTML</a></p>
+        <p class="index"><a href="#3" class="index">Detalles de la sintaxis de XHTML</a></p>
+        <p class="index"><a href="#4" class="index">Doctype indica al navegador qué debe esperar</a></p>
+        <p class="index"><a href="#5" class="index">El W3C y la validación de la página</a></p>
+        <p class="index"><a href="#6" class="index">Estructura HTML</a></p>
+        <p class="index"><a href="#7" class="index">Insertar imágenes en HTML</a></p>
+        <p class="index"><a href="#8" class="index">El papel de CSS</a></p>
+        <p class="index"><a href="#9" class="index">Definir un estilo para los títulos</a></p>
+        <p class="index"><a href="#10" class="index">Los estilos de clase y el elemento &lt;span&gt;</a></p>
+        <p class="index"><a href="#11" class="index">Tres maneras de utilizar estilos</a></p>
+        <p class="index"><a href="#12" class="index">Cuándo utilizar hojas de estilo internas y externas</a></p>
+        <p class="index"><a href="#13" class="index">Creación de una hoja de estilos externa</a></p>
+        <p class="index"><a href="#14" class="index">En qué consisten los estilos en cascada</a></p>
+        <p class="index"><a href="#15" class="index">Uso de textos y tipos de letra en la web</a></p>
+        <p class="index"><a href="#16" class="index">Elección de font-family</a></p>
+        <p class="index"><a href="#17" class="index">Cambiar el tamaño del texto con CSS</a></p>
+        <p class="index"><a href="#18" class="index">Las medidas en pixels y puntos no son la mejor opción para el tamaño</a></p>
+        <p class="index"><a href="#19" class="index">Uso de una combinación de porcentaje y medida "em"</a></p>
+        <p class="index"><a href="#20" class="index">Preguntas</a></p>
+        <p class="index"><a href="#21" class="index">Conclusiones</a></p>
     </div>
-
-    <p class="cont" id="1">LENGUAJES WEB</p>
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <p class="cont" id="1">Lenguajes Web</p>
     <div class="cont">
+        <p class="summary"></p>
 
     </div>
-    <p><a href="#0" class="cont">Inicio</a></p>
+    <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <p class="cont" id="2">La estructura de la página web se basa en HTML</p>
+    <div class="cont">
+        <p class="summary"></p>
+
+    </div>
+    <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <p class="cont" id="3">Detalles de la sintaxis de XHTML</p>
+    <div class="cont">
+        <p class="summary"></p>
+
+    </div>
+    <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <p class="cont" id="4">Doctype indica al navegador qué debe esperar</p>
+    <div class="cont">
+        <p class="summary"></p>
+
+    </div>
+    <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <p class="cont" id="5">El W3C y la validación de la página</p>
+    <div class="cont">
+        <p class="summary"></p>
+
+    </div>
+    <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <p class="cont" id="6">Estructura HTML</p>
+    <div class="cont">
+        <p class="summary"></p>
+
+    </div>
+    <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <p class="cont" id="7">Insertar imágenes en HTML</p>
+    <div class="cont">
+        <p class="summary"></p>
+
+    </div>
+    <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <p class="cont" id="8">El papel de CSS</p>
+    <div class="cont">
+        <p class="summary"></p>
+
+    </div>
+    <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <p class="cont" id="9">Definir un estilo para los títulos</p>
+    <div class="cont">
+        <p class="summary"></p>
+
+    </div>
+    <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <p class="cont" id="10">Los estilos de clase y el elemento &lt;span&gt;</p>
+    <div class="cont">
+        <p class="summary"></p>
+
+    </div>
+    <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <p class="cont" id="11">Tres maneras de utilizar estilos</p>
+    <div class="cont">
+        <p class="summary"></p>
+
+    </div>
+    <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <p class="cont" id="12">Cuándo utilizar hojas de estilo internas y externas</p>
+    <div class="cont">
+        <p class="summary"></p>
+
+    </div>
+    <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <p class="cont" id="13">Creación de una hoja de estilos externa</p>
+    <div class="cont">
+        <p class="summary"></p>
+
+    </div>
+    <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <p class="cont" id="14">En qué consisten los estilos en cascada</p>
+    <div class="cont">
+        <p class="summary"></p>
+
+    </div>
+    <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <p class="cont" id="15">Uso de textos y tipos de letra en la web</p>
+    <div class="cont">
+        <p class="summary"></p>
+
+    </div>
+    <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <p class="cont" id="16">Elección de font-family</p>
+    <div class="cont">
+        <p class="summary"></p>
+
+    </div>
+    <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <p class="cont" id="17">Cambiar el tamaño del texto con CSS</p>
+    <div class="cont">
+        <p class="summary">
+            La propiedad CSS que controla el tamaño del texto se llama font-size. <br>
+            • Tamaño absoluto: xx-small, x-small, small, medium, large, x-large y xx-large. <br>
+            • Longitud: Es un número seguido de un indicador del sistema de medida (cm, mm, in, pt, o pc) o bien un de unidades relativas (em, ex, o px). <br>
+            • Porcentaje: Un entero seguido del signo de porcentaje (%). <br>
+            • Tamaño relativo: Los valores posibles son larger y smaller. <br> <br>
+            La elección de la unidad de medida para el tamaño de la letra en una página web es importante y no es tan fácil como parece. La principal dificultad en este sentido tiene que ver con la resolución de la pantalla y las distintas maneras en que, a lo largo del tiempo, los navegadores han resuelto la presentación de los textos. <br>
+        </p>
+
+    </div>
+    <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <p class="cont" id="18">Las medidas en pixels y puntos no son la mejor opción para el tamaño</p>
+    <div class="cont">
+        <p class="summary">
+            Aunque la unidad "points" está soportada, su uso es una mala práctica y no se recomienda en el diseño de páginas Web. Los puntos son un sistema de medida pensado para la imprenta de papel que indican una unidad absoluta de medida que no tiene una equivalencia exacta en pantalla. Los pixels, por su parte, son la unidad de medida que se suele emplear en los gráficos por ordenador.
+            A lo largo de los años, los navegadores han resuelto el proceso de cambio de tamaño de los textos de diversas maneras. Por ejemplo, Internet Explorer 6 y 7 no modifican el tamaño del texto basado en pixels si el usuario opta por alterar la configuración por defecto.
+        </p>
+
+    </div>
+    <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <p class="cont" id="19">Uso de una combinación de porcentaje y medida "em"</p>
+    <div class="cont">
+        <p class="summary">
+            Una forma de resolver el problema del cambio de tamaño de los textos que causa el uso de pixels consiste en aplicar otras unidades de medida. <br> <br>
+            La unidad de medida llamada "em" es muy parecida a los pixels en el sentido de que está pensada para variar la escala. La diferencia principal es que los "ems" no dependen de la resolución del monitor, mientras que los pixels sí. Puede que al principio los ems no sean muy intuitivos, pero si aprendemos a utilizarlos, nos aportarán grandes ventajas en el futuro. <br> <br>
+            p { <br>
+                font-size:1em;<br>
+                }<br> <br>
+            Quizá nos ayude a entender esta relación si la expresamos en forma matemática:<br> <br>
+            1 em = 100% = 16 pixels. <br> <br>
+            Recuerda que una de las razones más importantes para utilizar em como unidad de medida es que se adapta en el caso de que un usuario altere el tamaño del texto de su navegador. <br><br>
+            Otra de las ventajas de utilizar ems tiene que ver con la relación de escala entre todos los elementos que utilizan esta unidad de medida. <br>
+
+        </p>
+
+    </div>
+    <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <p class="cont" id="20">Preguntas</p>
+    <div class="cont">
+        <p class="summary">
+            1.- ¿Que es un XML y para que sirve? <br><br>
+            XML es el acrónimo de Extensible Markup Language, es decir, es un lenguaje de marcado que define un conjunto de reglas para la codificación de documentos. <br><br>
+            El lenguaje XML proporciona una plataforma para definir elementos para crear un formato y generar un lenguaje personalizado. <br><br><br>
+            2.- ¿Que caracteristicas tiene un documento HTML?<br><br>
+            Todo lenguaje de marcado tiene una gramática que nos indica qué etiquetas se pueden utilizar, qué sig­nifican, cómo se relacionan entre ellas, etc. Es muy similar a las gramáticas de las lenguas humanas. Por ejemplo, la gramática española nos indica que un párrafo debe comenzar con mayúscula y finalizar con un punto y aparte. En HTML la gramática marca que un párrafo debe comenzar con la etiqueta &lt;p&gt; y finalizar con el cierre de la misma etiqueta (&lt;/p&gt;). <br><br>
+            División de la información en dos bloques: la cabecera (head) y el cuerpo (body). Se incluye el contenido en el body y los datos técnicos en la cabecera. En este sentido hay que destacar la etiqueta DOCTYPE, que nos indica qué tipo de gramática. <br><br><br>
+            3.- ¿Que es y para que sirve un archivo XHTML?<br><br>
+            Los archivos guardados con la extensión XHTML son archivos de sitios web escritos en cierto lenguaje de programación. El contenido del archivo está escrito en XHTML, una versión extendida de HTML 4 que crea aplicaciones XML 1.0. <br><br>
+            Es un lenguaje de marcado que te permite editar webs. Está basado en HTML 4.01, pero sus reglas son mucho más estrictas y versátiles que HTML.
+        </p>
+
+    </div>
+    <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <p class="cont" id="21">Conclusiones</p>
+    <div class="cont">
+        <p class="summary">
+            Elda Priscila Fabela Paez:<br><br>
+            A mi parecer, el XHTML basicamente existe para poner orden dentro de las paginas web, poder validar y desvalidar paginas, al ser la sintaxis mas estricta que en HTML. <br><br><br>
+            Diego Javier Saucedo Jiménez:<br><br>
+            Estefani Denisse Gallegos:<br><br>
+            Carlos Rafael Garcia Hernández:<br><br>
+            Paulina Leon Zabalgoitia:<br><br>
+        </p>
+
+    </div>
+    <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
 
 </body>
 </html>
