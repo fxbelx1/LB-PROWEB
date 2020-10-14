@@ -77,9 +77,10 @@
 
         h1.cont{
             font-family: 'Lilita One', cursive;
+            font-weight: normal;
             text-align: center;
-            font-size: 30px;
-            letter-spacing: 4px;
+            font-size: 35px;
+            
         }
 
         div.cont{
@@ -89,7 +90,7 @@
             background-color: black;
             border-radius: 3px;
             border: 2px solid;
-            border-color: white;
+            
         }
 
         a.cont{
@@ -156,7 +157,9 @@
     <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
     <p class="cont" id="1">Lenguajes Web</p>
     <div class="cont">
-        <p class="summary"></p>
+        <p class="summary">
+            En esta lección vamos a conocer los elementos básicos de dos lenguajes: HTML y CSS. Aunque tienen distinta sintaxis y reglas, dependen fuertemente uno del otro.<br>
+        </p>
 
     </div>
     <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
@@ -164,7 +167,14 @@
     <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
     <p class="cont" id="2">La estructura de la página web se basa en HTML</p>
     <div class="cont">
-        <p class="summary"></p>
+        <p class="summary">
+            Una página web mantiene siempre la misma estructura, consistente en dos partes: <br> <br>
+            •	La cabecera de la página, donde se definen algunos datos que no se representan cuando se ve la página, como información sobre el título de la página, el autor de la página, editor con el que se ha creado la página, juego de caracteres que debe usar para representar la página, etc. <br><br>
+            Todo lo definido entre las etiquetas &lt;HEAD&gt; .... &lt;/HEAD&gt; conforma la cabecera del documento. Entre los elementos de la cabecera hay que destacar el elemento &lt;TITLE&gt;, que es obligatorio, e indica el título de la página. Este título es utilizado por los navegadores visuales para dar nombre a la ventana en la que se está viendo la página. <br><br>
+            •	El cuerpo del documento, donde se define el contenido visible de la página web. <br>
+            •	Al igual que para la cabecera, todo lo definido entra las etiquetas &lt;BODY&gt; ... &lt;/BODY&gt; constituye el cuerpo de la página. <br>
+            •	Además, existe otra etiqueta (&lt;HTML&gt;) que sirve para indicar donde comienza y termina la página web. <br><br><br>
+        </p>
 
     </div>
     <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
@@ -172,7 +182,18 @@
     <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
     <p class="cont" id="3">Detalles de la sintaxis de XHTML</p>
     <div class="cont">
-        <p class="summary"></p>
+        <p class="summary">
+            Sintaxis XHTML (eXtensible HyperText Markup Language) es muy similar al HTML sintaxis y casi todos los elementos HTML en XHTML válido. Pero cuando se escribe un documento XHTML tienes que pagar un poco más de atención. <br><br>
+            Aquí están los puntos importantes para recordar cuando escribir un nuevo documento XHTML o convertir los documento HTML a XHTML documento: <br><br>
+            •	Se necesita para escribir una declaración DOCTYPE en el inicio del documento XHTML. <br>
+            •	Usted debe escribir todas las etiquetas y atributos XHTML sólo en minúsculas. <br>
+            •	Tiene que cerrar todas las etiquetas XHTML correctamente. <br>
+            •	Debe consignar todos los valores de atributo. <br>
+            •	Atributo minimización está prohibido. <br>
+            •	El id atributo sustituye el atributo name. <br>
+            •	El idioma atributo de la etiqueta script está en desuso. <br>
+            •	Usted necesidad de anidar todas las etiquetas correctamente.
+        </p>
 
     </div>
     <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
@@ -180,7 +201,26 @@
     <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
     <p class="cont" id="4">Doctype indica al navegador qué debe esperar</p>
     <div class="cont">
-        <p class="summary"></p>
+        <p class="summary">
+            El Doctype o “Declaración del tipo de documento” es una instrucción especial que va al inicio de nuestro documento HTML y que permite al navegador entender qué versión de HTML estamos utilizando. Esta información determinará la manera en la que el navegador procesará el documento, un DOCTYPE distinto podría implicar hasta una visualización diferente del sitio web dentro del mismo navegador. <br><br>
+            En el caso de HTML5, el DOCTYPE a emplear es el siguiente: <br><br>
+            See the Pen DOCTYPE html by Devcode.la (@devcodela) on CodePen. <br><br>
+            Este es más simple de recordar con respecto a los DOCTYPE de las versiones anteriores de HTML. <br><br>
+            La W3C en esta nueva versión de HTML5 nos presenta un DOCTYPE que no referencia a ninguna Definición del tipo de documento (DTD), debido a que HTML5 no utiliza el sistema SGML como las versiones anteriores. <br><br>
+            Para brindarte un alcance de cómo se utilizaba el DOCTYPE en versiones anteriores, veremos un ejemplo: <br><br>
+            See the Pen DOCTYPE html by Devcode.la (@devcodela) on CodePen. <br><br>
+            Tenemos el DOCTYPE de HTML4.01 Strict<br><br>
+            Donde: <br><br>
+            • DOCTYPE nos indica que estamos ante la declaración del tipo de documento. <br>
+            • Elemento de primer nivel, en este caso HTML. <br>
+            • Disponibilidad, en este caso PUBLIC. <br>
+            • + o -, en el caso de la W3C se utiliza -.<br>
+            • La organización que ha creado el DTD en este caso la W3C. <br>
+            • El tipo de documento, en este caso DTD. <br>
+            • El nombre del DTD en este caso HTML 4.01. <br>
+            • El idioma en el que está escrito el DTD en este caso EN de inglés. <br>
+            • La URL del DTD en este caso http://www.w3.org/TR/html4/strict.dtd, si accedemos a esta url podemos visualizar el contenido del DTD.
+        </p>
 
     </div>
     <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
@@ -188,7 +228,14 @@
     <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
     <p class="cont" id="5">El W3C y la validación de la página</p>
     <div class="cont">
-        <p class="summary"></p>
+        <p class="summary">
+            La validación de las páginas web no requiere el uso de editores avanzados como Dreamweaver, ya que el organismo W3C ha creado una herramienta que se puede utilizar gratuitamente a través de Internet. <br><br>
+            Aunque la herramienta sólo está disponible en inglés, su uso es muy intuitivo: <br><br>
+            •	Validate by URI, permite escribir la URL de la página que se quiere validar. Esta opción es la más sencilla para validar las páginas que ya están publicadas en Internet. <br><br>
+            •	Validate by File Upload, muestra un formulario mediante el que se puede subir el archivo HTML correspondiente a la página que se quiere validar. Esta opción es la mejor para validar las páginas web que has desarrollado y que aún no has publicado en Internet. <br><br>
+            •	Validate by Direct Input, permite validar código HTML de forma directa. Se trata de la opción más rápida para validar trozos o páginas HTML completas. Esta opción es la mejor cuando estás desarrollando las páginas y quieres asegurarte que el código sea válido. <br><br>
+            Si la página no pasa correctamente la prueba de validación, se muestra el listado completo de fallos junto con la ayuda necesaria para resolver cada uno de los errores.
+        </p>
 
     </div>
     <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
@@ -220,7 +267,22 @@
     <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
     <p class="cont" id="9">Definir un estilo para los títulos</p>
     <div class="cont">
-        <p class="summary"></p>
+        <p class="summary">
+            Para hacernos una idea de cómo funciona CSS vamos a crear una regla CSS sencilla que cambia el estilo de un título en la página. <br><br>
+            1. Dentro del navegador, analiza el texto de título. El estilo y las instrucciones de formato las aportan las "reglas" que el propio navegador aplica por diseño a los elementos &lt;h1&gt; a la hora de presentarlos en pantalla. El tamaño, color y tipo de letra los resuelve el navegador ya que no dispone de otras instrucciones de formato. El navegador solo sabe que hay un elemento "heading 1" y lo muestra de la forma en que considera adecuado. <br><br>
+            2. En la parte superior de la página busca la etiqueta &lt;title&gt;, y justo debajo de ella, añade una línea nueva, con el siguiente texto: <br><br>
+            &lt;style type="text/css"&gt;<br><br>
+            3. Pulsa Intro tres veces y después escribe &lt;/style&gt;. En este momento tenemos un elemento de estilo sin contenido alguno, pero nos servirá para insertar ahí una regla con la que vamos a modificar el estilo del elemento &lt;h1&gt; <br><br>
+            4. En la línea vacía que hay debajo de la etiqueta de apertura &lt;style&gt;, escribe esto: <br><br>
+            h1 {<br><br>
+            5. Pulsa Intro y después el tabulador para poner el cursor debajo del signo de la llave en el editor, si es que el propio editor no te posiciona automáticamente en ese lugar. <br><br>
+            6. Escribe este código debajo de h1 : <br><br>
+            color: red; <br><br>
+            La palabra color se denomina una propiedad en la sintaxis CSS y la palabra red es el valor que le aplicamos a esa propiedad. <br><br>
+            7. Guarda el archivo en disco y visualiza la página en el navegador. <br><br><br>
+            El color, tanto en HTML como CSS, se designa mediante un código de seis caracteres precedido por el signo de almohadilla. A esta notación se le llama código hexadecimal, y es el sistema que se utiliza para identificar y establecer el color de los elementos. El código se divide en tres pares de dígitos, y cada uno de ellos representa el valor RGB del espectro. Por ejemplo, el color blanco se representa en notación RBG como R:255 G:255 B:255, y su equivalente en HTML en formato hexadecimal es #FFFFFF (siendo FF el equivalente hexadecimal del número 255 decimal, que se repite para los tres pares). <br><br>
+            La regla que acabamos de crear emplea lo que se conoce como “selector de tipo”, puesto que se aplica a todas las apariciones del elemento tipo h1 en el documento. Los selectores de tipo asignan propiedades CSS a cualquier etiqueta HTML del documento. En este caso, a la etiqueta &lt;h1&gt;. Todas las apariciones de &lt;h1&gt; se mostrarán en pantalla con el texto en rojo. Los selectores de tipo también se les suele denominar “selectores de etiqueta”.
+        </p>
 
     </div>
     <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
@@ -228,7 +290,24 @@
     <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
     <p class="cont" id="10">Los estilos de clase y el elemento &lt;span&gt;</p>
     <div class="cont">
-        <p class="summary"></p>
+        <p class="summary">
+            Los selectores de etiqueta se utilizan con mucha frecuencia, pero solo se pueden aplicar a elementos HTML. Cuando lo que queremos es modificar el estilo de alguna cosa que no coincide exactamente con una etiqueta, por ejemplo cambiar el color de una única palabra dentro de un párrafo, el selector de etiqueta no es una buena opción (e incluso en algunas ocasiones resulta imposible de aplicar). <br> <br>
+            En este caso podemos utilizar el selector de clase, que es una regla CSS que se puede aplicar a cualquier elemento dentro de una página. <br> <br>
+            1. Sitúa el cursor en la línea justo debajo de la llave de cierre de la regla h1 y escribe esto: <br> <br>
+            .red { <br> 
+                Color:red; <br>
+            } <br>
+            Fíjate en el punto al principio del selector de clase. El texto que sigue al punto es el nombre de la clase. Puedes utilizar cualquier nombre, pero el punto al principio del mismo es obligatorio, para poder identificarlo como una clase. <br> <br>
+            2. En el primer párrafo &lt;p&gt; dentro de la etiqueta &lt;body&gt;, sitúa el cursor justo delante de las palabras Worldwide Apparel, pulsa y escribe: <br> <br>
+
+            &lt;span&gt; <br> <br>
+
+            3. A la derecha de Apparel añade la siguiente etiqueta de cierre &lt;/span&gt;. <br> <br>
+            4. Ve a la etiqueta de apertura &lt;span&gt;. Entre la letra “n” de “span” y símbolo “&gt;”, inserta un espacio en blanco y escribe esto: <br> <br>
+
+            Class=”red” <br> <br>
+            5. Guarda la página y visualízala en el navegador. <br> <br>
+        </p>
 
     </div>
     <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
@@ -236,7 +315,11 @@
     <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
     <p class="cont" id="11">Tres maneras de utilizar estilos</p>
     <div class="cont">
-        <p class="summary"></p>
+        <p class="summary">
+            En la práctica anterior los estilos estaban situados dentro de la sección de cabecera (&lt;head&gt;) de la página. Esta modalidad recibe el nombre de hoja de estilos interna. Además de hojas de estilo internas, también existen las hojas de estilos externas y los estilos aplicados directamente ("inline"). <br> <br>
+            Una hoja de estilo externa es un documento independiente con la extensión .css. Cuando utilizamos un archivo externo, los estilos se definen en él y en las páginas HTML tenemos que insertar un enlace a dicho archivo las hojas externas se pueden aplicar a múltiples documentos HHTML Los estilos inline o directos son la tercera posibilidad, pero se utilizan mucho menos que las otras dos. <br> <br>
+            Los estilos directos son herramientas potentes porque se superponen tanto a los estilos internos como a los externos, aunque solamente se aplican a una etiqueta cada vez. Por su propia naturaleza, resulta complicado reutilizarlos. <br> <br>
+        </p>
 
     </div>
     <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
@@ -244,7 +327,11 @@
     <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
     <p class="cont" id="12">Cuándo utilizar hojas de estilo internas y externas</p>
     <div class="cont">
-        <p class="summary"></p>
+        <p class="summary">
+            En las hojas de estilo internas, las reglas CSS quedan escritas directamente dentro del documento utilizando la etiqueta &lt;style&gt;. La hoja de estilos queda ubicada dentro de la sección &lt;head&gt; del documento. En el caso de las hojas internas, las reglas CSS solo se aplican al documento en donde residen. <br> <br>
+            Un cambio en cualquier regla exigiría modificar todas y cada una de las hojas de estilo internas en dichas páginas para mantener la consistencia. <br> <br>
+            En las hojas externas las reglas CSS, como ya explicábamos anteriormente, se guardan en archivos independientes. Podemos asociar un mismo archivo .css a cualquier página HTML, y con ello nos ahorraremos mucho trabajo y ganamos en flexibilidad. Si definimos una regla para el elemento <p> en una hoja de estilo externa, todos los párrafos del sitio web quedan modificados de inmediato.
+        </p>
 
     </div>
     <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
@@ -252,7 +339,9 @@
     <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
     <p class="cont" id="13">Creación de una hoja de estilos externa</p>
     <div class="cont">
-        <p class="summary"></p>
+        <p class="summary">
+            Una página HTML no tiene por qué limitarse a utilizar solamente una hoja de estilos externa, y en muchos sitios web de grandes dimensiones, las definiciones de estilos suelen repartirse entre varios archivos, para facilitar su organización y mantenimiento. Podemos incluso utilizar hojas de estilos para funciones concretas, como imprimir una página o visualizar el contenido en dispositivos móviles. Se pueden diseñar hojas de estilo también para que nuestros sitios web sean compatibles con navegadores antiguos. 
+        </p>
 
     </div>
     <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
@@ -260,7 +349,9 @@
     <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
     <p class="cont" id="14">En qué consisten los estilos en cascada</p>
     <div class="cont">
-        <p class="summary"></p>
+        <p class="summary">
+            Existen tres lugares donde podemos indicar reglas CSS: dentro de la propia etiqueta (inline), internamente y en archivos externos asociados. Si surgiera algún conflicto en la definición de estilos entre las declaraciones inline, interna y/o externa, el estilo directo (inline) será el que prevalezca porque es el que más cerca se sitúa del código HTML. La hoja de estilo interna tiene precedencia sobre cualquier otra externa, y las definiciones utilizadas en hojas de estilo externas se utilizan solo si no entran en conflicto con las declaraciones internas o directas.
+        </p>
 
     </div>
     <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
@@ -268,7 +359,9 @@
     <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
     <p class="cont" id="15">Uso de textos y tipos de letra en la web</p>
     <div class="cont">
-        <p class="summary"></p>
+        <p class="summary">
+            Cuando especificamos el uso de una fuente concreta, esta fuente ha de estar instalada en el ordenador o el dispositivo del usuario donde se va a restituir la página. Si el ordenador o dispositivo no dispone de esa fuente, el navegador la sustituye por otra. Puesto que es imposible saber qué fuentes están instaladas en los ordenadores de los usuarios, y debido a la capacidad que tienen los navegadores para sustituir unos tipos de letra por otros, es posible que los resultados obtenidos en ciertos equipos no se correspondan con el diseño que hemos previsto. Una opción puede ser utilizar fuentes que sabemos que podemos encontrar en la mayoría de los ordenadores.
+        </p>
 
     </div>
     <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
@@ -276,7 +369,9 @@
     <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
     <p class="cont" id="16">Elección de font-family</p>
     <div class="cont">
-        <p class="summary"></p>
+        <p class="summary">
+            La escasez de opciones a la hora de utilizar distintas fuentes en la web ha causado frustración entre los diseñadores Web durante muchos años. Este problema va aliviándose a medida que ciertas empresas han ido creando soluciones para que las páginas puedan verse en un navegador con los tipos de letra especificados por los creadores.
+        </p>
 
     </div>
     <h1 class="cont"><a href="#0" class="cont">Indice</a></h1>
@@ -348,12 +443,15 @@
     <p class="cont" id="21">Conclusiones</p>
     <div class="cont">
         <p class="summary">
-            Elda Priscila Fabela Paez:<br><br>
-            A mi parecer, el XHTML basicamente existe para poner orden dentro de las paginas web, poder validar y desvalidar paginas, al ser la sintaxis mas estricta que en HTML. <br><br><br>
-            Diego Javier Saucedo Jiménez:<br><br>
-            Estefani Denisse Gallegos:<br><br>
-            Carlos Rafael Garcia Hernández:<br><br>
-            Paulina Leon Zabalgoitia:<br><br>
+            Elda Priscila Fabela Paez:<br>
+            A mi parecer, el XHTML basicamente existe para poner orden dentro de las paginas web, poder validar y desvalidar paginas, al ser la sintaxis mas estricta que en HTML. Me parece bastante necesario porque se necesita tener estandares en las paginas web. <br><br><br>
+            Diego Javier Saucedo Jiménez:<br>
+            El lenguaje css nos permite añadir estilos a cualquier HTML son una gran herramienta para personalizar distintos elementos del código. Con esto podemos personalizar desde HTML o con una hoja de estilo externa y tener el control del diseño de una página web. <br><br><br>
+            Estefani Denisse Gallegos:<br>
+            El uso de XHTML es importante porque devine el tipo de documento, y un DOCTYPE es una instrucción que va al principio del HTML y esta permite al navegador saber que versión de HTML usa al navegador.<br><br><br>
+            Carlos Rafael Garcia Hernández:<br>
+            Al hacer esta actividad me pude dar cuenta de todas las características de los archivos HTML y de las hojas de estilo CSS. Es importante conocer la mayoría de las funciones que se encuentran en cada uno de estos archivos y así poder realizar una página web de manera exitosa y sin errores.<br><br><br>
+            Paulina Leon Zabalgoitia:<br>
         </p>
 
     </div>
