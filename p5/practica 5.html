@@ -1,0 +1,130 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+    <link href="C:\Users\Pau\Documents\NetBeansProjects\WebApplication1\build\web\webestilos.css" rel="stylesheet" type="text/css"/>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>El señor de los anillos</title> <!--1er etiqueta-->
+    </head>
+
+    <body><!--7ma etiqueta-->
+        <h1>Bienvenido al mundo del señor de los anillos.</h1><!--2da etiqueta-->
+        <div class="parrafo"><!--3ra etiqueta-->
+      <!--4ta etiqueta-->  <p>El Señor de los Anillos (The Lord of the Rings en el original inglés) es una novela escrita por J.R.R. Tolkien entre 1937 y 1949. 
+            Fue realizada como secuela debido al éxito de su anterior libro, El Hobbit, en el que apareció por primera vez la mítica Tierra Media y 
+            los hobbits. A causa de su longitud respecto la obra anterior, Tolkien decidió divididirla en seis libros, 
+            pero la idea no acabó de convencer a la editorial, y finalmente fue convertida en una trilogía, cuyos títulos 
+            fueron El Señor de los Anillos: La Comunidad del Anillo, El Señor de los Anillos: 
+            Las Dos Torres y El Señor de los Anillos: El Retorno del Rey. Todas fueron finalmente publicadas entre 1954 y 1955.</p> </div>
+       
+            <input type="button" value="Gandalf"  onClick="gandalf()"/><!--5ta etiqueta-->
+            <div id="gandalf">
+                Gandalf es un personaje de la novela El Señor de los Anillos y El Hobbit , aparece también en el Silmarillion y 
+                en el Legendarium ,de J.R.R. Tolkien. Es uno de los personajes principales, aparte de ser uno de los cinco Istari (Magos), 
+                que fueron enviados para combatir a Sauron, siendo el último de ellos en llegar. Se le conocía de muchas maneras, 
+                Gandalf era el nombre que más se usaba; Mithrandir le llamaban los elfos y hombres de Gondor; Incánus, entre los hombres
+                del sur; Tharkûn, entre los enanos y Olórin, en las Tierras Imperecederas, siendo éste su nombre original.
+        </div>
+       
+        <input type="button" value="Aragon"  onClick="aragon()"/>
+        <div id="aragon"><!--6ta etiqueta-->
+            Aragorn (Valor de rey en sindarin), también conocido como Trancos, fue un dúnedain y el trigésimo noveno heredero de Isildur
+            en línea directa. Al finalizar la guerra del anillo, se casó con Arwen y tuvo un hijo, llamado Eldarion.
+       
+        </div>
+         <input type="button" value="Legolas"  onClick="Legolas()"/>
+        <div id="Legolas">
+            Es un elfo sindar, hijo de Thranduil, Rey de los Elfos Silvanos del Bosque Negro; por lo tanto, príncipe del Bosque Negro.
+            Formó parte de la Comunidad del Anillo y se hizo muy amigo de Aragorn y de Gimli. 
+            Su amistad con Gimli fue un gran paso para las relaciones entre enanos y elfos, muy debilitadas por sus antiguas guerras.
+       
+        </div>
+         <input type="button" value="Frodo"  onClick="frodo()"/>
+         <div id="frodo">
+            Frodo Bolsón (Frodo Baggins en el original inglés), es un personaje de la novela El Señor de los Anillos de J.R.R. Tolkien. 
+            Pertenece a la raza de los hobbits. Es hijo de Drogo Bolsón y de Prímula Brandigamo, sobrino de Bilbo Bolsón y medio primo de
+            Merry. Títulos: El Portador del Anillo, Frodo Nuevededos y Amigo de los Elfos.
+        </div>
+         <input type="button" value="Boromir"  onClick="boromir()"/>
+         <div id="boromir">
+            Boromir es un personaje de la novela El Señor de los Anillos de J.R.R. Tolkien. Fue uno de los mejores capitanes de Gondor y 
+            fue un miembro de la Compañía del Anillo. Era el Capitán de la Torre Blanca y portaba un cuerno del que se decía que su sonido
+            atemorizaba a los enemigos, el Gran Cuerno de Vorondil. Su fuerza y su ánimo le convirtieron en un gran comandante que protegió
+            su pueblo. Incluso Éomer de Rohan, le admiraba por su arrojo y liderazgo.
+        </div>
+         <input type="button" value="Gimli" onClick="gimli()"/><!--8va etiqueta(onClick)-->
+         <div id="gimli">
+            Gimli fue un Enano muy respetado en la Tierra Media durante la Tercera y Cuarta Edad. Formó parte de la Compañía del Anillo y 
+            combatió en la guerra contra Sauron al final de la Tercera Edad. Después de la derrota de Sauron, se le dio el señorío de 
+            Aglarond, conocido como Las Cavernas Centelleantes en el Abismo de Helm.
+        </div>
+         <input type="button" value="Sauron" onClick="sauron()"/>
+         <div id="sauron">
+            Es el antagonista y villano principal de "El Señor de los Anillos". Se le conoció también como "el Nigromante" en "El Hobbit"
+            antes de descubrir su verdadera identidad y "El Señor Oscuro" por los hombres de Gondor entre otros muchos nombres.
+            Es un Maiar, un espiritu nacido del Pensamiento de Eru Ilúvatar, el ser supremo, pero menor en Jerarquía y poder a los Valar.
+        </div>
+        <script>
+            function gandalf()
+            {
+                document.getElementById("gandalf").style.background= "white";
+            }
+            function aragon()
+            {
+                document.getElementById("aragon").style.background= "white";
+            }
+             function Legolas()
+            {
+                document.getElementById("Legolas").style.background= "white";
+            }
+             function frodo()
+            {
+                document.getElementById("frodo").style.background= "white";
+            }
+            function boromir()
+            {
+                document.getElementById("boromir").style.background= "white";
+            }
+             function gimli()
+            {
+                document.getElementById("gimli").style.background= "white";
+            }
+             function sauron()
+            {
+                document.getElementById("sauron").style.background= "white";
+            }
+        </script>
+    <aside> 
+        <p>¿Cual fue tu personaje favorito?</p>
+        <table>
+        <tr>
+        <td><input type="Checkbox">Gandalf</li></td>
+        <td><input type="Checkbox">Aragon</td>
+        <td><input type="Checkbox">Legolas</td>
+        <td><input type="Checkbox">Frodo</td>
+        <td><input type="Checkbox">Boromir</td>
+        <td><input type="Checkbox">Gimli</td>
+        <td><input type="Checkbox">Sauron</td>
+        </tr>
+        <tr>
+            <td> <img src="C:\Users\Pau\Desktop\FACU\SEMESTRE 3\lab web\imagenes\gandalf.jpg" style=width:180px;height:120px></td>
+            <td><img src="C:\Users\Pau\Desktop\FACU\SEMESTRE 3\lab web\imagenes\aragon.jpg" style=width:180px;height:120px></td>
+            <td><img src="C:\Users\Pau\Desktop\FACU\SEMESTRE 3\lab web\imagenes\legolas.jpg" style=width:180px;height:120px></td>
+            <td><img src="C:\Users\Pau\Desktop\FACU\SEMESTRE 3\lab web\imagenes\frodo.jpg" style=width:180px;height:120px></td>
+            <td><img src="C:\Users\Pau\Desktop\FACU\SEMESTRE 3\lab web\imagenes\boromir.jpg" style=width:180px;height:120px></td>
+            <td><img src="C:\Users\Pau\Desktop\FACU\SEMESTRE 3\lab web\imagenes\gimli.jpg" style=width:180px;height:120px></td>
+            <td><img src="C:\Users\Pau\Desktop\FACU\SEMESTRE 3\lab web\imagenes\sauron.jpg" style=width:180px;height:120px></td>
+        </tr>
+        </table>
+    </aside>    
+         
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/CvAXidAPTRM" 
+             frameborder="0" allow="accelerometer;
+             autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><!--9na etiqueta-->
+    </body>
+   
+        
+
+</html>
