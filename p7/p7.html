@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PRACTICA #7</title>
+
+    <style>
+        h1{
+            text-align: center;
+            color: #e3bce2;
+        }
+
+        #desordenados{
+            float: left;
+            margin-right: 10px;
+            margin-left: 500px;
+        }
+
+        #ordenados{
+            float: left;
+        }
+
+        #numeros{
+            width: 450px;
+            height: 225px;
+            border: 1px solid #e3bce2;
+            margin-bottom: 10px;
+        }
+
+        #cont1, #cont2, #cont3{
+            width: 450px;
+            height: 225px;
+            border: 1px solid #e3bce2;
+            margin-bottom: 10px;
+            background-color: #e3bce2;
+        }
+
+        #boton{
+            margin-top: 750px;
+            text-align: center;
+        }
+
+        a{
+            text-decoration: none;
+            background-color: #e3bce2;
+            color: white;
+            font-size: 20px;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    <h1>Ordenar los numeros de mayor a menor</h1>
+    <div id="desordenados">
+        <div id="numeros">
+            <img id="uno" src="imagenes/10.png" alt="529730" style="width: 450px;" draggable="true" ondragstart="drag1(event)">
+        </div>    
+
+        <div id="numeros">
+            <img id="dos" src="imagenes/8.png" alt="235409" style="width: 450px;" draggable="true" ondragstart="drag2(event)">
+        </div>
+
+        <div id="numeros">
+            <img id="tres" src="imagenes/9.png" alt="905432" style="width: 450px;" draggable="true" ondragstart="drag3(event)">
+        </div>
+
+    </div>
+
+    <div id="ordenados">
+        <div id="cont1" ondrop="drop1(event)" ondragover="allowDrop(event)"></div>
+        <div id="cont2" ondrop="drop2(event)" ondragover="allowDrop(event)"></div>
+        <div id="cont3" ondrop="drop3(event)" ondragover="allowDrop(event)"></div>
+
+    </div>
+
+    <script>
+        var id, im, cont;
+
+        function allowDrop(ev){
+            ev.preventDefault();
+        }
+
+        function drag1(ev){
+            id=ev.target.id;
+            im = 2;
+        }
+
+        function drag2(ev){
+            id=ev.target.id;
+            im = 3;
+        }
+
+        function drag3(ev){
+            id=ev.target.id;
+            im = 1;
+        }
+
+        function drop1(ev){
+            cont = 1;
+            if(im == cont){
+                ev.target.append(document.getElementById(id));
+            }
+        }
+
+        function drop2(ev){
+            cont = 2;
+            if(im == cont){
+                ev.target.append(document.getElementById(id));
+            }
+        }
+
+        function drop3(ev){
+            cont = 3;
+            if(im == cont){
+                ev.target.append(document.getElementById(id));
+            }
+        }
+
+    </script>
+
+</body>
+</html>       
